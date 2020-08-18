@@ -1,0 +1,38 @@
+﻿  main.cpp
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(37,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(38,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(40,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(42,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): warning C4984: 'if constexpr' is a C++17 language extension
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): warning C4984: 'if constexpr' is a C++17 language extension
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
+  queryItems.cpp
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(37,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(38,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(40,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(42,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): warning C4984: 'if constexpr' is a C++17 language extension
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): warning C4984: 'if constexpr' is a C++17 language extension
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(124,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(128,5): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(129,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(246,42): warning C4018: '<': signed/unsigned mismatch
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(217,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(234,9): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(235,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(236,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(237,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(238,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(500,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(519,13): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(528,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(532,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(536,9): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(537,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+  Loadout-Generator.vcxproj -> H:\Airru\Documents\GitHub\Loadout-Generator\x64\Debug\Loadout-Generator.exe

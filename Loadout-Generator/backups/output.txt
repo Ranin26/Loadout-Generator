@@ -1,0 +1,478 @@
+________________Weapons________________
+0.    Unknown Weapon  Chaos 0   Rating:0
+	Damage: 0   Attack Speed: 0   DPS: 0
+
+1.    Unknown Weapon  Chaos 0   Rating:0
+	Damage: 0   Attack Speed: 0   DPS: 0
+
+2.    Unknown Weapon  Chaos 0   Rating:0
+	Damage: 0   Attack Speed: 0   DPS: 0
+
+3.    Unknown Weapon  Chaos 0   Rating:0
+	Damage: 0   Attack Speed: 0   DPS: 0
+
+4.    Unknown Weapon  Chaos 0   Rating:0
+	Damage: 0   Attack Speed: 0   DPS: 0
+
+5.    Unknown Weapon  Chaos 0   Rating:0
+	Damage: 0   Attack Speed: 0   DPS: 0
+
+
+________________Helmets________________
+0.    Victory Star  Chaos 0   Rating:400
+	Health: 95   Armor: 720   Shield: 0
+	Fire Res:32 | Elec Res:40 | Cold Res:44 | Chaos Res:0
+
+1.    Miracle Star  Chaos 70   Rating:352
+	Health: 106   Armor: 531   Shield: 0
+	Fire Res:29 | Elec Res:0 | Cold Res:45 | Chaos Res:24
+
+2.    Vengeance Corona  Chaos 8   Rating:313
+	Health: 83   Armor: 505   Shield: 0
+	Fire Res:37 | Elec Res:41 | Cold Res:13 | Chaos Res:0
+
+3.    Fate Halo  Chaos 0   Rating:312
+	Health: 117   Armor: 193   Shield: 0
+	Fire Res:13 | Elec Res:34 | Cold Res:38 | Chaos Res:13
+
+4.    Dragon Visage  Chaos 180   Rating:311
+	Health: 118   Armor: 211   Shield: 0
+	Fire Res:41 | Elec Res:26 | Cold Res:14 | Chaos Res:14
+
+5.    Corpse Cowl  Chaos 1   Rating:306
+	Health: 98   Armor: 373   Shield: 0
+	Fire Res:40 | Elec Res:27 | Cold Res:23 | Chaos Res:0
+
+
+________________Gloves________________
+0.    Soul Knuckle  Chaos 0   Rating:303
+	Health: 89   Armor: 227   Shield: 0
+	Fire Res:43 | Elec Res:0 | Cold Res:42 | Chaos Res:21
+
+1.    Death Fingers  Chaos 0   Rating:301
+	Health: 88   Armor: 264   Shield: 0
+	Fire Res:40 | Elec Res:35 | Cold Res:0 | Chaos Res:27
+
+2.    Cataclysm Claw  Chaos 0   Rating:278
+	Health: 88   Armor: 237   Shield: 0
+	Fire Res:0 | Elec Res:44 | Cold Res:47 | Chaos Res:0
+
+3.    Behemoth Paw  Chaos 0   Rating:268
+	Health: 75   Armor: 327   Shield: 0
+	Fire Res:29 | Elec Res:25 | Cold Res:31 | Chaos Res:0
+
+4.    Armageddon Knuckle  Chaos 20   Rating:260
+	Health: 79   Armor: 278   Shield: 0
+	Fire Res:43 | Elec Res:39 | Cold Res:0 | Chaos Res:0
+
+5.    Torment Talons  Chaos 0   Rating:255
+	Health: 82   Armor: 202   Shield: 0
+	Fire Res:0 | Elec Res:39 | Cold Res:45 | Chaos Res:0
+
+
+________________Boots________________
+0.    Entropy Hoof  Chaos 2   Rating:313
+	Health: 84   Armor: 362   Shield: 0
+	Fire Res:40 | Elec Res:27 | Cold Res:36 | Chaos Res:0
+
+1.    Anarchy Dash  Chaos 0   Rating:313
+	Health: 115   Armor: 272   Shield: 0
+	Fire Res:46 | Elec Res:0 | Cold Res:47 | Chaos Res:0
+
+2.    Anarchy Hoof  Chaos 2   Rating:310
+	Health: 88   Armor: 112   Shield: 0
+	Fire Res:38 | Elec Res:44 | Cold Res:39 | Chaos Res:0
+
+3.    Corpse Span  Chaos 100   Rating:306
+	Health: 87   Armor: 174   Shield: 0
+	Fire Res:45 | Elec Res:32 | Cold Res:37 | Chaos Res:0
+
+4.    Agony Hoof  Chaos 0   Rating:296
+	Health: 77   Armor: 240   Shield: 0
+	Fire Res:47 | Elec Res:16 | Cold Res:45 | Chaos Res:0
+
+5.    Gloom Trail  Chaos 0   Rating:248
+	Health: 88   Armor: 151   Shield: 0
+	Fire Res:42 | Elec Res:39 | Cold Res:0 | Chaos Res:0
+
+
+________________Chests________________
+0.    Armageddon Veil  Chaos 2   Rating:486
+	Health: 101   Armor: 1390   Shield: 0
+	Fire Res:45 | Elec Res:0 | Cold Res:44 | Chaos Res:15
+
+1.    Plague Mantle  Chaos 0   Rating:476
+	Health: 108   Armor: 1040   Shield: 0
+	Fire Res:48 | Elec Res:22 | Cold Res:55 | Chaos Res:0
+
+2.    Rage Shelter  Chaos 0   Rating:438
+	Health: 117   Armor: 917   Shield: 0
+	Fire Res:12 | Elec Res:12 | Cold Res:60 | Chaos Res:24
+
+3.    Hypnotic Veil  Chaos 5   Rating:437
+	Health: 103   Armor: 711   Shield: 0
+	Fire Res:47 | Elec Res:54 | Cold Res:33 | Chaos Res:0
+
+4.    Empyrean Ward  Chaos 25   Rating:426
+	Health: 129   Armor: 711   Shield: 0
+	Fire Res:58 | Elec Res:12 | Cold Res:12 | Chaos Res:30
+
+5.    Brimstone Suit  Chaos 5   Rating:425
+	Health: 100   Armor: 924   Shield: 0
+	Fire Res:59 | Elec Res:12 | Cold Res:12 | Chaos Res:27
+
+
+________________Left Rings________________
+0.    Woe Band  Chaos 0   Rating:309
+	Health: 78   Armor: 0   Shield: 0
+	Fire Res:28 | Elec Res:59 | Cold Res:49 | Chaos Res:0
+
+1.    Doom Circle  Chaos 8   Rating:307
+	Health: 75   Armor: 0   Shield: 0
+	Fire Res:15 | Elec Res:63 | Cold Res:59 | Chaos Res:0
+
+2.    Foe Gyre  Chaos 90   Rating:302
+	Health: 79   Armor: 0   Shield: 0
+	Fire Res:57 | Elec Res:0 | Cold Res:41 | Chaos Res:27
+
+3.    Skull Coil  Chaos 35   Rating:294
+	Health: 72   Armor: 0   Shield: 0
+	Fire Res:55 | Elec Res:16 | Cold Res:60 | Chaos Res:0
+
+4.    Loath Knot  Chaos 50   Rating:294
+	Health: 77   Armor: 0   Shield: 0
+	Fire Res:15 | Elec Res:37 | Cold Res:76 | Chaos Res:0
+
+5.    Behemoth Finger  Chaos 0   Rating:234
+	Health: 74   Armor: 0   Shield: 0
+	Fire Res:42 | Elec Res:39 | Cold Res:0 | Chaos Res:11
+
+
+________________Right Rings________________
+0.    Woe Band  Chaos 0   Rating:309
+	Health: 78   Armor: 0   Shield: 0
+	Fire Res:28 | Elec Res:59 | Cold Res:49 | Chaos Res:0
+
+1.    Doom Circle  Chaos 8   Rating:307
+	Health: 75   Armor: 0   Shield: 0
+	Fire Res:15 | Elec Res:63 | Cold Res:59 | Chaos Res:0
+
+2.    Foe Gyre  Chaos 90   Rating:302
+	Health: 79   Armor: 0   Shield: 0
+	Fire Res:57 | Elec Res:0 | Cold Res:41 | Chaos Res:27
+
+3.    Skull Coil  Chaos 35   Rating:294
+	Health: 72   Armor: 0   Shield: 0
+	Fire Res:55 | Elec Res:16 | Cold Res:60 | Chaos Res:0
+
+4.    Loath Knot  Chaos 50   Rating:294
+	Health: 77   Armor: 0   Shield: 0
+	Fire Res:15 | Elec Res:37 | Cold Res:76 | Chaos Res:0
+
+5.    Behemoth Finger  Chaos 0   Rating:234
+	Health: 74   Armor: 0   Shield: 0
+	Fire Res:42 | Elec Res:39 | Cold Res:0 | Chaos Res:11
+
+
+________________Amulets________________
+0.    Phoenix Choker  Chaos 0   Rating:284
+	Health: 101   Armor: 0   Shield: 0
+	Fire Res:34 | Elec Res:33 | Cold Res:0 | Chaos Res:33
+
+1.    Kraken Medallion  Chaos 50   Rating:254
+	Health: 79   Armor: 0   Shield: 0
+	Fire Res:36 | Elec Res:26 | Cold Res:41 | Chaos Res:0
+
+2.    Onslaught Clasp  Chaos 2   Rating:253
+	Health: 97   Armor: 0   Shield: 0
+	Fire Res:58 | Elec Res:17 | Cold Res:17 | Chaos Res:0
+
+3.    Hate Braid  Chaos 15   Rating:250
+	Health: 79   Armor: 0   Shield: 0
+	Fire Res:24 | Elec Res:53 | Cold Res:24 | Chaos Res:0
+
+4.    Brood Medallion  Chaos 20   Rating:247
+	Health: 71   Armor: 0   Shield: 0
+	Fire Res:0 | Elec Res:44 | Cold Res:25 | Chaos Res:28
+
+5.    Agony Idol  Chaos 0   Rating:216
+	Health: 70   Armor: 0   Shield: 0
+	Fire Res:36 | Elec Res:14 | Cold Res:36 | Chaos Res:0
+
+
+________________Belts________________
+0.    Corpse Strap  Chaos 0   Rating:353
+	Health: 117   Armor: 0   Shield: 0
+	Fire Res:48 | Elec Res:0 | Cold Res:48 | Chaos Res:35
+
+1.    Behemoth Lash  Chaos 8   Rating:341
+	Health: 99   Armor: 0   Shield: 0
+	Fire Res:0 | Elec Res:49 | Cold Res:49 | Chaos Res:36
+
+2.    Entropy Harness  Chaos 15   Rating:324
+	Health: 92   Armor: 0   Shield: 0
+	Fire Res:0 | Elec Res:57 | Cold Res:45 | Chaos Res:28
+
+3.    Gloom Bind  Chaos 0   Rating:316
+	Health: 138   Armor: 0   Shield: 0
+	Fire Res:17 | Elec Res:43 | Cold Res:45 | Chaos Res:0
+
+4.    Brood Thread  Chaos 3.5   Rating:304
+	Health: 95   Armor: 0   Shield: 0
+	Fire Res:44 | Elec Res:36 | Cold Res:43 | Chaos Res:0
+
+5.    Apocalypse Leash  Chaos 0   Rating:278
+	Health: 86   Armor: 0   Shield: 0
+	Fire Res:37 | Elec Res:36 | Cold Res:40 | Chaos Res:0
+
+
+1. Rating: 2965  Cost: 110   DPS: 300
+	Hp: 722   Armor: 2736   Shield: 0
+	Fire Res: 263  Cold Res: 273  Elec Res: 247  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+2. Rating: 2955  Cost: 102   DPS: 300
+	Hp: 725   Armor: 2736   Shield: 0
+	Fire Res: 276  Cold Res: 263  Elec Res: 243  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+3. Rating: 2952  Cost: 109   DPS: 300
+	Hp: 718   Armor: 2736   Shield: 0
+	Fire Res: 276  Cold Res: 259  Elec Res: 251  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Entropy Harness
+
+4. Rating: 2951  Cost: 208   DPS: 300
+	Hp: 725   Armor: 2548   Shield: 0
+	Fire Res: 268  Cold Res: 274  Elec Res: 252  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+5. Rating: 2949  Cost: 117   DPS: 300
+	Hp: 715   Armor: 2736   Shield: 0
+	Fire Res: 263  Cold Res: 269  Elec Res: 255  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Entropy Harness
+
+6. Rating: 2947  Cost: 200   DPS: 300
+	Hp: 728   Armor: 2548   Shield: 0
+	Fire Res: 281  Cold Res: 264  Elec Res: 248  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+7. Rating: 2945  Cost: 102   DPS: 300
+	Hp: 729   Armor: 2486   Shield: 0
+	Fire Res: 274  Cold Res: 266  Elec Res: 260  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+8. Rating: 2942  Cost: 110   DPS: 300
+	Hp: 726   Armor: 2486   Shield: 0
+	Fire Res: 261  Cold Res: 276  Elec Res: 264  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+9. Rating: 2927  Cost: 207   DPS: 300
+	Hp: 721   Armor: 2548   Shield: 0
+	Fire Res: 281  Cold Res: 260  Elec Res: 256  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Entropy Harness
+
+10. Rating: 2926  Cost: 12   DPS: 300
+	Hp: 739   Armor: 2736   Shield: 0
+	Fire Res: 282  Cold Res: 280  Elec Res: 257  Chaos Res: 110
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Doom Circle | b: Corpse Strap
+
+11. Rating: 2925  Cost: 18   DPS: 300
+	Hp: 748   Armor: 2646   Shield: 0
+	Fire Res: 254  Cold Res: 243  Elec Res: 259  Chaos Res: 122
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Dash | a: Phoenix Choker | r1: Doom Circle | r2: Behemoth Finger | b: Behemoth Lash
+
+12. Rating: 2924  Cost: 215   DPS: 300
+	Hp: 718   Armor: 2548   Shield: 0
+	Fire Res: 268  Cold Res: 270  Elec Res: 260  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Entropy Harness
+
+13. Rating: 2923  Cost: 62   DPS: 300
+	Hp: 719   Armor: 2736   Shield: 0
+	Fire Res: 248  Cold Res: 249  Elec Res: 260  Chaos Res: 122
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Loath Knot | r2: Behemoth Finger | b: Behemoth Lash
+
+14. Rating: 2923  Cost: 100   DPS: 300
+	Hp: 741   Armor: 2263   Shield: 0
+	Fire Res: 243  Cold Res: 279  Elec Res: 255  Chaos Res: 147
+	w: Shotgun | h: Victory Star | c: Rage Shelter | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+15. Rating: 2918  Cost: 109   DPS: 300
+	Hp: 722   Armor: 2486   Shield: 0
+	Fire Res: 274  Cold Res: 262  Elec Res: 268  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Entropy Harness
+
+16. Rating: 2915  Cost: 117   DPS: 300
+	Hp: 719   Armor: 2486   Shield: 0
+	Fire Res: 261  Cold Res: 272  Elec Res: 272  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Entropy Harness
+
+17. Rating: 2915  Cost: 198   DPS: 300
+	Hp: 744   Armor: 2075   Shield: 0
+	Fire Res: 248  Cold Res: 280  Elec Res: 260  Chaos Res: 147
+	w: Shotgun | h: Victory Star | c: Rage Shelter | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+18. Rating: 2913  Cost: 20   DPS: 300
+	Hp: 718   Armor: 2699   Shield: 0
+	Fire Res: 251  Cold Res: 274  Elec Res: 251  Chaos Res: 116
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Soul Knuckle | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Behemoth Finger | b: Behemoth Lash
+
+19. Rating: 2911  Cost: 102   DPS: 300
+	Hp: 747   Armor: 2209   Shield: 0
+	Fire Res: 257  Cold Res: 257  Elec Res: 237  Chaos Res: 151
+	w: Shotgun | h: Fate Halo | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+20. Rating: 2910  Cost: 109   DPS: 300
+	Hp: 740   Armor: 2209   Shield: 0
+	Fire Res: 257  Cold Res: 253  Elec Res: 245  Chaos Res: 143
+	w: Shotgun | h: Fate Halo | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Entropy Harness
+
+21. Rating: 2909  Cost: 122   DPS: 300
+	Hp: 695   Armor: 2736   Shield: 0
+	Fire Res: 242  Cold Res: 288  Elec Res: 254  Chaos Res: 133
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Brood Medallion | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+22. Rating: 2909  Cost: 133   DPS: 300
+	Hp: 750   Armor: 2057   Shield: 0
+	Fire Res: 276  Cold Res: 241  Elec Res: 259  Chaos Res: 153
+	w: Shotgun | h: Victory Star | c: Empyrean Ward | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+23. Rating: 2909  Cost: 160   DPS: 300
+	Hp: 722   Armor: 2548   Shield: 0
+	Fire Res: 253  Cold Res: 250  Elec Res: 265  Chaos Res: 122
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Loath Knot | r2: Behemoth Finger | b: Behemoth Lash
+
+24. Rating: 2909  Cost: 208   DPS: 300
+	Hp: 747   Armor: 2021   Shield: 0
+	Fire Res: 249  Cold Res: 268  Elec Res: 246  Chaos Res: 151
+	w: Shotgun | h: Fate Halo | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+25. Rating: 2907  Cost: 47   DPS: 300
+	Hp: 718   Armor: 2736   Shield: 0
+	Fire Res: 274  Cold Res: 282  Elec Res: 259  Chaos Res: 111
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Skull Coil | b: Behemoth Lash
+
+26. Rating: 2905  Cost: 12   DPS: 300
+	Hp: 721   Armor: 2699   Shield: 0
+	Fire Res: 264  Cold Res: 264  Elec Res: 247  Chaos Res: 116
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Soul Knuckle | b: Entropy Hoof | a: Phoenix Choker | r1: Woe Band | r2: Behemoth Finger | b: Behemoth Lash
+
+27. Rating: 2905  Cost: 60   DPS: 300
+	Hp: 712   Armor: 2614   Shield: 0
+	Fire Res: 255  Cold Res: 258  Elec Res: 249  Chaos Res: 122
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Agony Hoof | a: Phoenix Choker | r1: Loath Knot | r2: Behemoth Finger | b: Behemoth Lash
+
+28. Rating: 2904  Cost: 55   DPS: 300
+	Hp: 715   Armor: 2736   Shield: 0
+	Fire Res: 261  Cold Res: 292  Elec Res: 263  Chaos Res: 111
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Skull Coil | b: Behemoth Lash
+
+29. Rating: 2904  Cost: 113   DPS: 300
+	Hp: 721   Armor: 2270   Shield: 0
+	Fire Res: 277  Cold Res: 241  Elec Res: 259  Chaos Res: 150
+	w: Shotgun | h: Victory Star | c: Brimstone Suit | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+30. Rating: 2904  Cost: 130   DPS: 300
+	Hp: 713   Armor: 2750   Shield: 0
+	Fire Res: 266  Cold Res: 273  Elec Res: 251  Chaos Res: 111
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Armageddon Knuckle | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+31. Rating: 2904  Cost: 152   DPS: 300
+	Hp: 728   Armor: 2486   Shield: 0
+	Fire Res: 261  Cold Res: 293  Elec Res: 238  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Foe Gyre | r2: Loath Knot | b: Behemoth Lash
+
+32. Rating: 2904  Cost: 155   DPS: 300
+	Hp: 727   Armor: 2020   Shield: 0
+	Fire Res: 275  Cold Res: 261  Elec Res: 250  Chaos Res: 150
+	w: Shotgun | h: Victory Star | c: Brimstone Suit | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Foe Gyre | r2: Loath Knot | b: Behemoth Lash
+
+33. Rating: 2904  Cost: 108   DPS: 300
+	Hp: 715   Armor: 2614   Shield: 0
+	Fire Res: 270  Cold Res: 282  Elec Res: 236  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Agony Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+34. Rating: 2904  Cost: 108   DPS: 300
+	Hp: 726   Armor: 2525   Shield: 0
+	Fire Res: 265  Cold Res: 237  Elec Res: 259  Chaos Res: 138
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Gloom Trail | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+35. Rating: 2903  Cost: 159   DPS: 300
+	Hp: 721   Armor: 2486   Shield: 0
+	Fire Res: 261  Cold Res: 289  Elec Res: 246  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Foe Gyre | r2: Loath Knot | b: Entropy Harness
+
+36. Rating: 2903  Cost: 115   DPS: 300
+	Hp: 708   Armor: 2614   Shield: 0
+	Fire Res: 270  Cold Res: 278  Elec Res: 244  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Agony Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Entropy Harness
+
+37. Rating: 2903  Cost: 111   DPS: 300
+	Hp: 714   Armor: 2148   Shield: 0
+	Fire Res: 284  Cold Res: 250  Elec Res: 248  Chaos Res: 150
+	w: Shotgun | h: Victory Star | c: Brimstone Suit | g: Death Fingers | b: Agony Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+38. Rating: 2903  Cost: 180   DPS: 300
+	Hp: 737   Armor: 2297   Shield: 0
+	Fire Res: 258  Cold Res: 277  Elec Res: 224  Chaos Res: 162
+	w: Shotgun | h: Miracle Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+39. Rating: 2903  Cost: 200   DPS: 300
+	Hp: 750   Armor: 2021   Shield: 0
+	Fire Res: 262  Cold Res: 258  Elec Res: 242  Chaos Res: 151
+	w: Shotgun | h: Fate Halo | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+40. Rating: 2903  Cost: 198   DPS: 300
+	Hp: 775   Armor: 2137   Shield: 0
+	Fire Res: 249  Cold Res: 262  Elec Res: 265  Chaos Res: 125
+	w: Shotgun | h: Dragon Visage | c: Armageddon Veil | g: Death Fingers | b: Anarchy Dash | a: Phoenix Choker | r1: Woe Band | r2: Doom Circle | b: Behemoth Lash
+
+41. Rating: 2902  Cost: 207   DPS: 300
+	Hp: 743   Armor: 2021   Shield: 0
+	Fire Res: 262  Cold Res: 254  Elec Res: 250  Chaos Res: 143
+	w: Shotgun | h: Fate Halo | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Entropy Harness
+
+42. Rating: 2901  Cost: 110   DPS: 300
+	Hp: 742   Armor: 2548   Shield: 0
+	Fire Res: 287  Cold Res: 281  Elec Res: 262  Chaos Res: 110
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Phoenix Choker | r1: Woe Band | r2: Doom Circle | b: Corpse Strap
+
+43. Rating: 2901  Cost: 98   DPS: 300
+	Hp: 734   Armor: 2141   Shield: 0
+	Fire Res: 250  Cold Res: 288  Elec Res: 244  Chaos Res: 147
+	w: Shotgun | h: Victory Star | c: Rage Shelter | g: Death Fingers | b: Agony Hoof | a: Phoenix Choker | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+44. Rating: 2900  Cost: 145   DPS: 300
+	Hp: 723   Armor: 2057   Shield: 0
+	Fire Res: 255  Cold Res: 256  Elec Res: 266  Chaos Res: 148
+	w: Shotgun | h: Victory Star | c: Empyrean Ward | g: Death Fingers | b: Entropy Hoof | a: Brood Medallion | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+45. Rating: 2900  Cost: 220   DPS: 300
+	Hp: 698   Armor: 2548   Shield: 0
+	Fire Res: 247  Cold Res: 289  Elec Res: 259  Chaos Res: 133
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Corpse Span | a: Brood Medallion | r1: Woe Band | r2: Foe Gyre | b: Behemoth Lash
+
+46. Rating: 2900  Cost: 187   DPS: 300
+	Hp: 730   Armor: 2297   Shield: 0
+	Fire Res: 258  Cold Res: 273  Elec Res: 232  Chaos Res: 154
+	w: Shotgun | h: Miracle Star | c: Armageddon Veil | g: Death Fingers | b: Anarchy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Entropy Harness
+
+47. Rating: 2900  Cost: 110   DPS: 300
+	Hp: 744   Armor: 2209   Shield: 0
+	Fire Res: 244  Cold Res: 267  Elec Res: 241  Chaos Res: 151
+	w: Shotgun | h: Fate Halo | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Behemoth Lash
+
+48. Rating: 2899  Cost: 102   DPS: 300
+	Hp: 761   Armor: 2736   Shield: 0
+	Fire Res: 280  Cold Res: 269  Elec Res: 241  Chaos Res: 102
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Foe Gyre | b: Gloom Bind
+
+49. Rating: 2899  Cost: 32   DPS: 300
+	Hp: 705   Armor: 2736   Shield: 0
+	Fire Res: 262  Cold Res: 256  Elec Res: 248  Chaos Res: 116
+	w: Shotgun | h: Victory Star | c: Armageddon Veil | g: Death Fingers | b: Entropy Hoof | a: Brood Medallion | r1: Doom Circle | r2: Behemoth Finger | b: Corpse Strap
+
+50. Rating: 2899  Cost: 10   DPS: 300
+	Hp: 751   Armor: 2263   Shield: 0
+	Fire Res: 263  Cold Res: 247  Elec Res: 249  Chaos Res: 130
+	w: Shotgun | h: Victory Star | c: Rage Shelter | g: Death Fingers | b: Entropy Hoof | a: Phoenix Choker | r1: Doom Circle | r2: Behemoth Finger | b: Corpse Strap
+
