@@ -1,0 +1,867 @@
+
+Weapon& Weapon::operator = (Weapon& weapon)
+{
+	name = weapon.name;
+	cost = weapon.cost;
+	rating = weapon.rating;
+	damage = weapon.damage;
+	speed = weapon.speed;
+	return *this;
+}
+
+void Weapon::copy(Weapon& weapon)
+{
+	*name = *weapon.name;
+	cost = weapon.cost;
+	rating = weapon.rating;
+	damage = weapon.damage;
+	speed = weapon.speed;
+}
+
+Armor& Armor::operator = (Armor& armor)
+{
+	name = armor.name;
+	cost = armor.cost;
+	rating = armor.rating;
+	armor.calcRating();
+	fRes = armor.fRes;
+	eRes = armor.eRes;
+	cRes = armor.cRes;
+	chRes = armor.chRes;
+	hp = armor.hp;
+	es = armor.es;
+	this->armor = armor.armor;
+	return *this;
+}
+
+void Armor::copy(Armor& armor)
+{
+	*name = *armor.name;
+	cost = armor.cost;
+	rating = armor.rating;
+	armor.calcRating();
+	fRes = armor.fRes;
+	eRes = armor.eRes;
+	cRes = armor.cRes;
+	chRes = armor.chRes;
+	hp = armor.hp;
+	es = armor.es;
+	this->armor = armor.armor;
+}
+
+
+Jewlry& Jewlry::operator = (Jewlry& jewlry)
+{
+	name = jewlry.name;
+	cost =jewlry.cost;
+	rating = jewlry.rating;
+	fRes = jewlry.fRes;
+	eRes = jewlry.eRes;
+	cRes = jewlry.cRes;
+	chRes = jewlry.chRes;
+	hp = jewlry.hp;
+	es = jewlry.es;
+	this->armor = jewlry.armor;
+	return *this;
+}
+
+void Jewlry::copy(Jewlry &jewlry)
+{
+	*name = *jewlry.name;
+	cost = jewlry.cost;
+	rating = jewlry.rating;
+	fRes = jewlry.fRes;
+	eRes = jewlry.eRes;
+	cRes = jewlry.cRes;
+	chRes = jewlry.chRes;
+	hp = jewlry.hp;
+	es = jewlry.es;
+	this->armor = jewlry.armor;
+}
+
+
+									tempLoadout.addBelt(beltPool[i]);/**/
+									tempLoadout.calcStats();
+									if (tempLoadout.meetsMinimums())
+									{//NONE 115
+										tempLoadout.calcRating();//HERE only 530
+										rating = tempLoadout.getRating(); //HERE ONLY 290
+										if(rating < minRating || rating < loadouts[MAX_LOADOUTS - 1].getRating())
+										{
+											t = count;
+											while (t > 0 && loadouts[t - 1].getRating() < rating)//HERE only 240
+											{
+												loadouts[t] = loadouts[t - 1];//here only 240
+												t--;
+											}
+											loadouts[t] = tempLoadout;//HERE only 530
+											if (count < MAX_LOADOUTS - 1)	count++;
+											//ALL 560
+										}
+									}
+
+									
+void Pool::readItems()
+{
+	ifstream fin;
+	fin.open("items.txt");
+
+	if (!fin)
+	{
+		cerr << "Can't open file.";
+		system("pause");
+		exit(1);
+	}
+
+	string name;
+	float cost;
+	int damage, i;
+	double speed;
+	int fRes, cRes, eRes, chRes, hp, armor, es, j;
+	Weapon tempWeapon;
+	Armor tempChest;
+	Armor tempGloves;
+	Armor tempBoots;
+	Armor tempHelmet;
+	Jewlry tempRing1;
+	Jewlry tempRing2;
+	Jewlry tempBelt;
+	Jewlry tempAmulet;
+
+	MYSQL* conn;
+	dbConnect(conn);
+
+	const char* query = new char[512];
+	stringstream ss;
+	string str; 
+	MYSQL_ROW row;
+	MYSQL_RES* res;
+
+//	for (i = 0; i < MAX; i++)
+//	{
+	query = "Select * from weapons";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Helmet Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		res = mysql_store_result(conn);
+		while (row = mysql_fetch_row(res))
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			damage = stoi(row[3]);
+			speed = stod(row[4]);
+
+		tempWeapon.setName(name);
+		tempWeapon.setCost(cost);
+		tempWeapon.setDamage(damage);
+		tempWeapon.setSpeed(speed);
+		tempWeapon.calcRating();
+		cout << "Weapon Read successful\n";
+		
+		j = i;
+		while (j > 0 && weaponPool[j - 1]->getRating() < tempWeapon.getRating())
+		{
+			*weaponPool[j] = *weaponPool[j-1];
+			j--;
+		}
+		*weaponPool[j]=tempWeapon;
+		}
+	}
+		/*getline(fin, name);
+		fin	>> cost >> damage >> speed;
+		fin.ignore();*/
+//	}
+//	for (i = 0; i < MAX; i++)
+//	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempHelmet.setName(name);
+		tempHelmet.setCost(cost);
+		tempHelmet.setfRes(fRes);
+		tempHelmet.seteRes(eRes);
+		tempHelmet.setcRes(cRes);
+		tempHelmet.setchRes(chRes);
+		tempHelmet.setArmor(armor);
+		tempHelmet.setHp(hp);
+		tempHelmet.calcRating();
+		j = i;
+		while (j > 0 && helmetPool[j - 1]->getRating() < tempHelmet.getRating())
+		{
+			*helmetPool[j] = *helmetPool[j - 1];
+			j--;
+		}
+		*helmetPool[j]=tempHelmet;
+//	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempGloves.setName(name);
+		tempGloves.setCost(cost);
+		tempGloves.setfRes(fRes);
+		tempGloves.seteRes(eRes);
+		tempGloves.setcRes(cRes);
+		tempGloves.setchRes(chRes);
+		tempGloves.setArmor(armor);
+		tempGloves.setHp(hp);
+		tempGloves.calcRating();
+		j = i;
+		while (j > 0 && glovesPool[j - 1]->getRating() < tempGloves.getRating())
+		{
+			*glovesPool[j] = *glovesPool[j - 1];
+			j--;
+		}
+		*glovesPool[j]=tempGloves;
+	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempBoots.setName(name);
+		tempBoots.setCost(cost);
+		tempBoots.setfRes(fRes);
+		tempBoots.seteRes(eRes);
+		tempBoots.setcRes(cRes);
+		tempBoots.setchRes(chRes);
+		tempBoots.setArmor(armor);
+		tempBoots.setHp(hp);
+		tempBoots.calcRating();
+		j = i;
+		while (j > 0 && bootsPool[j - 1]->getRating() < tempBoots.getRating())
+		{
+			*bootsPool[j] = *bootsPool[j-1];
+			j--;
+		}
+		*bootsPool[j]=tempBoots;
+	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempChest.setName(name);
+		tempChest.setCost(cost);
+		tempChest.setfRes(fRes);
+		tempChest.seteRes(eRes);
+		tempChest.setcRes(cRes);
+		tempChest.setchRes(chRes);
+		tempChest.setArmor(armor);
+		tempChest.setHp(hp);
+		tempChest.calcRating();
+		j = i;
+		while (j > 0 && chestPool[j - 1]->getRating() < tempChest.getRating())
+		{
+			*chestPool[j] = *chestPool[j-1];
+			j--;
+		}
+		*chestPool[j]=tempChest;
+	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempRing1.setName(name);
+		tempRing1.setCost(cost);
+		tempRing1.setfRes(fRes);
+		tempRing1.seteRes(eRes);
+		tempRing1.setcRes(cRes);
+		tempRing1.setchRes(chRes);
+		tempRing1.setArmor(armor);
+		tempRing1.setHp(hp);
+		tempRing1.calcRating();
+		j = i;
+		while (j > 0 && ring1Pool[j - 1]->getRating() < tempRing1.getRating())
+		{
+			*ring1Pool[j] = *ring1Pool[j-1];
+			j--;
+		}
+		*ring1Pool[j]=tempRing1;
+	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempRing2.setName(name);
+		tempRing2.setCost(cost);
+		tempRing2.setfRes(fRes);
+		tempRing2.seteRes(eRes);
+		tempRing2.setcRes(cRes);
+		tempRing2.setchRes(chRes);
+		tempRing2.setArmor(armor);
+		tempRing2.setHp(hp);
+		tempRing2.calcRating();
+		j = i;
+		while (j > 0 && ring2Pool[j - 1]->getRating() < tempRing2.getRating())
+		{
+			*ring2Pool[j] = *ring2Pool[j-1];
+			j--;
+		}
+		*ring2Pool[j]=tempRing2;
+	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempAmulet.setName(name);
+		tempAmulet.setCost(cost);
+		tempAmulet.setfRes(fRes);
+		tempAmulet.seteRes(eRes);
+		tempAmulet.setcRes(cRes);
+		tempAmulet.setchRes(chRes);
+		tempAmulet.setArmor(armor);
+		tempAmulet.setHp(hp);
+		tempAmulet.calcRating();
+		j = i;
+		while (j > 0 && amuletPool[j - 1]->getRating() < tempAmulet.getRating())
+		{
+			*amuletPool[j] = *amuletPool[j-1];
+			j--;
+		}
+		*amuletPool[j]=tempAmulet;
+	}
+	for (i = 0; i < MAX; i++)
+	{
+		getline(fin, name);
+		fin >> cost >> fRes >> cRes >> eRes >> chRes >> armor >> hp;
+		fin.ignore();
+		tempBelt.setName(name);
+		tempBelt.setCost(cost);
+		tempBelt.setfRes(fRes);
+		tempBelt.seteRes(eRes);
+		tempBelt.setcRes(cRes);
+		tempBelt.setchRes(chRes);
+		tempBelt.setArmor(armor);
+		tempBelt.setHp(hp);
+		tempBelt.calcRating();
+		j = i;
+		while (j > 0 && beltPool[j - 1]->getRating() < tempBelt.getRating())
+		{
+			*beltPool[j] = *beltPool[j-1];
+			j--;
+		}
+		*beltPool[j]=tempBelt;
+	}
+	fin.close();
+}
+
+
+	template <class t>
+	void addItem(Pool& pool, string type, int &l, t &tempItem);
+template <class t>
+void Pool::addItem(Pool& pool, string type, int& l, t &tempItem)
+
+
+void Pool::addItem(Pool& pool, string type, int& l, Weapon& tempWeapon)
+{
+
+}
+
+void Pool::addItem(Pool& pool, string type, int& l, Armor& tempArmor)
+{
+	int m;
+	if (type == "chest") {
+		m = l;
+		while (m > 0 && chestPool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*chestPool[m] = *chestPool[m - 1];
+			m--;
+		}
+		*chestPool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "gloves") {
+		m = l;
+		while (m > 0 && glovesPool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*glovesPool[m] = *glovesPool[m - 1];
+			m--;
+		}
+		*glovesPool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "boots") {
+		m = l;
+		while (m > 0 && bootsPool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*bootsPool[m] = *bootsPool[m - 1];
+			m--;
+		}
+		*bootsPool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "helmet") {
+		m = l;
+		while (m > 0 && helmetPool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*helmetPool[m] = *helmetPool[m - 1];
+			m--;
+		}
+		*helmetPool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "amulet") {
+		m = l;
+		while (m > 0 && amuletPool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*amuletPool[m] = *amuletPool[m - 1];
+			m--;
+		}
+		*amuletPool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "ring1") {
+		m = l;
+		while (m > 0 && ring1Pool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*ring1Pool[m] = *ring1Pool[m - 1];
+			m--;
+		}
+		*ring1Pool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "ring2") {
+		m = l;
+		while (m > 0 && ring2Pool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*ring2Pool[m] = *ring2Pool[m - 1];
+			m--;
+		}
+		*ring2Pool[m] = tempArmor;
+		l++;
+	}
+	else if (type == "belt") {
+		m = l;
+		while (m > 0 && beltPool[m - 1]->getRating() < tempArmor.getRating())
+		{
+			*beltPool[m] = *beltPool[m - 1];
+			m--;
+		}
+		*beltPool[m] = tempArmor;
+		l++;
+	}
+}
+
+void Pool::addItem(Pool& pool, string type, int& l, Armor& tempJewlry)
+{
+
+}
+
+void Pool::readItems()
+{
+	ifstream fin;
+	fin.open("items.txt");
+
+	if (!fin)
+	{
+		cerr << "Can't open file.";
+		system("pause");
+		exit(1);
+	}
+
+	string name;
+	float cost;
+	int damage, i;
+	double speed;
+	int fRes, cRes, eRes, chRes, hp, armor, es, j;
+	Weapon tempWeapon;
+	Armor tempChest;
+	Armor tempGloves;
+	Armor tempBoots;
+	Armor tempHelmet;
+	Jewlry tempRing1;
+	Jewlry tempRing2;
+	Jewlry tempBelt;
+	Jewlry tempAmulet;
+
+	MYSQL* conn;
+	dbConnect(conn);
+
+	const char* query = new char[512];
+	stringstream ss;
+	string str; 
+	MYSQL_ROW row;
+	MYSQL_RES* res;
+
+	query = "Select * from weapons";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Weapon Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while ((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			damage = stoi(row[4]);
+			speed = stod(row[5]);
+
+			tempWeapon.setName(name);
+			tempWeapon.setCost(cost);
+			tempWeapon.setDamage(damage);
+			tempWeapon.setSpeed(speed);
+			tempWeapon.calcRating();
+		
+			j = i;
+			while (j > 0 && weaponPool[j - 1]->getRating() < tempWeapon.getRating())
+			{
+				*weaponPool[j] = *weaponPool[j-1];
+				j--;
+			}
+			*weaponPool[j]=tempWeapon;
+			i++;
+		}
+		cout << "Weapon Read successful\n";
+	}
+
+	query = "Select * from helmets";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Helmet Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempHelmet.setName(name);
+			tempHelmet.setCost(cost);
+			tempHelmet.setfRes(fRes);
+			tempHelmet.seteRes(eRes);
+			tempHelmet.setcRes(cRes);
+			tempHelmet.setchRes(chRes);
+			tempHelmet.setArmor(armor);
+			tempHelmet.setHp(hp);
+			tempHelmet.calcRating();
+			j = i;
+			while (j > 0 && helmetPool[j - 1]->getRating() < tempHelmet.getRating())
+			{
+				*helmetPool[j] = *helmetPool[j - 1];
+				j--;
+			}
+			*helmetPool[j] = tempHelmet;
+			i++;
+		}
+		cout << "Helmets Read successful\n";
+	}
+
+	query = "Select * from gloves";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Gloves Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempGloves.setName(name);
+			tempGloves.setCost(cost);
+			tempGloves.setfRes(fRes);
+			tempGloves.seteRes(eRes);
+			tempGloves.setcRes(cRes);
+			tempGloves.setchRes(chRes);
+			tempGloves.setArmor(armor);
+			tempGloves.setHp(hp);
+			tempGloves.calcRating();
+			j = i;
+			while (j > 0 && glovesPool[j - 1]->getRating() < tempGloves.getRating())
+			{
+				*glovesPool[j] = *glovesPool[j - 1];
+				j--;
+			}
+			*glovesPool[j]=tempGloves;
+			i++;
+		}
+		cout << "Gloves Read successful\n";
+	}
+
+	query = "Select * from boots";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Boots Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempBoots.setName(name);
+			tempBoots.setCost(cost);
+			tempBoots.setfRes(fRes);
+			tempBoots.seteRes(eRes);
+			tempBoots.setcRes(cRes);
+			tempBoots.setchRes(chRes);
+			tempBoots.setArmor(armor);
+			tempBoots.setHp(hp);
+			tempBoots.calcRating();
+			j = i;
+			while (j > 0 && bootsPool[j - 1]->getRating() < tempBoots.getRating())
+			{
+				*bootsPool[j] = *bootsPool[j-1];
+				j--;
+			}
+			*bootsPool[j]=tempBoots;
+			i++;
+		}
+		cout << "Boots Read successful\n";
+	}
+
+	query = "Select * from chests";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Chest Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempChest.setName(name);
+			tempChest.setCost(cost);
+			tempChest.setfRes(fRes);
+			tempChest.seteRes(eRes);
+			tempChest.setcRes(cRes);
+			tempChest.setchRes(chRes);
+			tempChest.setArmor(armor);
+			tempChest.setHp(hp);
+			tempChest.calcRating();
+			j = i;
+			while (j > 0 && chestPool[j - 1]->getRating() < tempChest.getRating())
+			{
+				*chestPool[j] = *chestPool[j-1];
+				j--;
+			}
+			*chestPool[j]=tempChest;
+			i++;
+		}
+		cout << "Chests Read successful\n";
+	}
+
+	query = "Select * from Lrings";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Ring1 Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempRing1.setName(name);
+			tempRing1.setCost(cost);
+			tempRing1.setfRes(fRes);
+			tempRing1.seteRes(eRes);
+			tempRing1.setcRes(cRes);
+			tempRing1.setchRes(chRes);
+			tempRing1.setArmor(armor);
+			tempRing1.setHp(hp);
+			tempRing1.calcRating();
+			j = i;
+			while (j > 0 && ring1Pool[j - 1]->getRating() < tempRing1.getRating())
+			{
+				*ring1Pool[j] = *ring1Pool[j-1];
+				j--;
+			}
+			*ring1Pool[j]=tempRing1;
+			i++;
+		}
+		cout << "Ring1s Read successful\n";
+	}
+
+	query = "Select * from Rrings";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Ring2 Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempRing2.setName(name);
+			tempRing2.setCost(cost);
+			tempRing2.setfRes(fRes);
+			tempRing2.seteRes(eRes);
+			tempRing2.setcRes(cRes);
+			tempRing2.setchRes(chRes);
+			tempRing2.setArmor(armor);
+			tempRing2.setHp(hp);
+			tempRing2.calcRating();
+			j = i;
+			while (j > 0 && ring2Pool[j - 1]->getRating() < tempRing2.getRating())
+			{
+				*ring2Pool[j] = *ring2Pool[j-1];
+				j--;
+			}
+			*ring2Pool[j]=tempRing2;
+			i++;
+		}
+		cout << "Ring2s Read successful\n";
+	}
+
+	query = "Select * from amulets";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Amulet Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempAmulet.setName(name);
+			tempAmulet.setCost(cost);
+			tempAmulet.setfRes(fRes);
+			tempAmulet.seteRes(eRes);
+			tempAmulet.setcRes(cRes);
+			tempAmulet.setchRes(chRes);
+			tempAmulet.setArmor(armor);
+			tempAmulet.setHp(hp);
+			tempAmulet.calcRating();
+			j = i;
+			while (j > 0 && amuletPool[j - 1]->getRating() < tempAmulet.getRating())
+			{
+				*amuletPool[j] = *amuletPool[j-1];
+				j--;
+			}
+			*amuletPool[j]=tempAmulet;
+			i++;
+		}
+		cout << "Amulets Read successful\n";
+	}
+
+	query = "Select * from belts";
+
+	if (mysql_query(conn, query))
+	{
+		cout << "Belt Insert failed \n";
+		system("pause");
+		exit(1);
+	}
+	else {
+		i = 0;
+		res = mysql_store_result(conn);
+		while((row = mysql_fetch_row(res)) && i < MAX_LOADOUTS)
+		{
+			name = row[1];
+			cost = stof(row[2]);
+			fRes = stoi(row[4]);
+			eRes = stod(row[5]);
+			cRes = stod(row[6]);
+			chRes = stod(row[7]);
+			armor = stod(row[8]);
+			hp = stod(row[9]);
+			tempBelt.setName(name);
+			tempBelt.setCost(cost);
+			tempBelt.setfRes(fRes);
+			tempBelt.seteRes(eRes);
+			tempBelt.setcRes(cRes);
+			tempBelt.setchRes(chRes);
+			tempBelt.setArmor(armor);
+			tempBelt.setHp(hp);
+			tempBelt.calcRating();
+			j = i;
+			while (j > 0 && beltPool[j - 1]->getRating() < tempBelt.getRating())
+			{
+				*beltPool[j] = *beltPool[j-1];
+				j--;
+			}
+			*beltPool[j]=tempBelt;
+			i++;
+		}
+		cout << "Belts Read successful\n";
+	}
+}

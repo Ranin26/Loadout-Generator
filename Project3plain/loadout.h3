@@ -1,0 +1,194 @@
+#ifndef LOADOUT_H
+#define LOADOUT_H
+#include <cstdlib>
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <chrono>
+using namespace std;
+
+const int MAX = 10;
+const int MAX_LOADOUTS = 50;
+//const int minItemRating;
+const int maxCost = 500;
+const int minRating = 2000;
+const int minDPS = 200;
+const int minfRes = 190;
+const int mineRes = 190;
+const int mincRes = 190;
+const int minchRes = 75;
+const int maxfRes = 250;
+const int maxeRes = 250;
+const int maxcRes = 250;
+const int maxchRes = 175;
+const int minHp = 690;
+const int minArmor = 850;
+const int minEs = 0;
+
+class Item {
+public:
+	Item(string newName, float newCost, int newRating);
+	string getName();
+	float getCost();
+	int getRating();
+	void setName(string newName);
+	void setCost(float newCost);
+	void setRating(int newRating);
+protected:
+	string name;
+	float cost;
+	int rating;
+};
+
+class Weapon : public Item {
+public:
+	friend ofstream&  operator << (ofstream& os, Weapon& weapon);
+	Weapon(string name = "Unknown Weapon", float cost = 0.0, int dmg = 0, double speed = 0.0, double dps = 0, int rating = 0);
+	int getDamage();
+	double getSpeed();
+	double getDPS();
+	void setDamage(int &newDamage);
+	void setSpeed(double &newSpeed);
+	void calcRating();
+	void calcDPS();
+private:
+	int damage;
+	double speed;
+	double DPS;
+};
+
+class Armor : public Item {
+	friend ofstream& operator << (ofstream& os, Armor& armor);
+public:
+	Armor(string name = "Unknown Armor", float cost = 0.0, int fres = 0, int eres = 0, int cres = 0, int chres = 0, int arm = 0, int health = 0, int shield = 0, int rating = 0);
+	int getfRes();
+	int geteRes();
+	int getcRes();
+	int getchRes();
+	int getArmor();
+	int getHp();
+	int getEs();
+	void setfRes(int &newFRES);
+	void seteRes(int &newERES);
+	void setcRes(int &newCRES);
+	void setchRes(int &newCHRES);
+	void setArmor(int &newArmor);
+	void setHp(int &newHp);
+	void setEs(int &newEs);
+	void calcRating();
+private:
+	int fRes;
+	int eRes;
+	int cRes; //cold resistance
+	int chRes;
+	int armor;
+	int hp;
+	int es;
+};
+
+class Jewlry : public Item {
+	friend ofstream& operator << (ofstream& os, Jewlry& jewl);
+public:
+	Jewlry(string name = "Unknown Jewlry", float cost = 0.0, int fres = 0, int eres = 0, int cres = 0, int chres = 0, int arm = 0, int health = 0, int shield = 0, int rating = 0);
+	int getfRes();
+	int geteRes();
+	int getcRes();
+	int getchRes();
+	int getArmor();
+	int getHp();
+	int getEs();
+	void setfRes(int &newFRES);
+	void seteRes(int &newERES);
+	void setcRes(int &newCRES);
+	void setchRes(int &newCHRES);
+	void setArmor(int &newArmor);
+	void setHp(int &newHealth);
+	void setEs(int &newShield);
+	void calcRating();
+private:
+	int fRes;
+	int eRes;
+	int cRes; //cold resistance
+	int chRes;
+	int armor;
+	int hp;
+	int es;
+};
+
+/*class weaponList{
+
+};*/
+
+class Loadout {
+public:
+	Loadout();
+	void addWeapon(Weapon *_weapon);
+	void addHelmet(Armor *_helmet);
+	void addBoots(Armor *_boots);
+	void addGloves(Armor *_gloves);
+	void addChest(Armor *_chest);
+	void addRing1(Jewlry *_ring1);
+	void addRing2(Jewlry *_ring2);
+	void addBelt(Jewlry *_belt);
+	void addAmulet(Jewlry *_amulet);
+	void calcRating();
+	void calcDPS();
+	void calcStats();
+	bool meetsMinimums();
+	void printLoadout(ofstream& fout);
+	int getItems();
+	int getRating();
+	int getfRes();
+	int geteRes();
+	int getcRes();
+	int getchRes();
+	int getArmor();
+	int getHp();
+	int getEs();
+	int getCost();
+	double getDPS();
+private:
+	Weapon *weapon;
+	Armor *chest;
+	Armor *gloves;
+	Armor *boots;
+	Armor *helmet;
+	Jewlry *ring1;
+	Jewlry *ring2;
+	Jewlry *belt;
+	Jewlry *amulet;
+	int totalRating;
+	int numItems;
+	int rating;
+	int cost;
+	int fRes;
+	int eRes;
+	int cRes; //cold resistance
+	int chRes;
+	int armor;
+	int hp;
+	int es;
+	double DPS;
+};
+
+class Pool {
+	//friend ostream &operator << (ostream &os, Pool &pool);
+public:
+	void readItems();
+	void printPool(ofstream& fout);
+	void bestLoadouts(Loadout *loadouts);
+private:
+	//Weapon weap;
+	Weapon weaponPool[MAX];
+	Armor helmetPool[MAX];
+	Armor glovesPool[MAX];
+	Armor bootsPool[MAX];
+	Armor chestPool[MAX];
+	Jewlry ring1Pool[MAX];
+	Jewlry ring2Pool[MAX];
+	Jewlry amuletPool[MAX];
+	Jewlry beltPool[MAX];
+};
+
+void printLoadouts(Loadout loadouts[], ofstream& fout);
+#endif

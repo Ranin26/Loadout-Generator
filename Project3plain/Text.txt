@@ -1,0 +1,22 @@
+// name,  cost,  dmg,  spd,  dps,  rating
+/*Weapon mace("Slayer", 10, 1.667);
+test.addWeapon(mace);
+//  name,  cost,  fres,  eres,  cres,  chres,  arm,  health,  shield,  rating
+Armor helmet("Hat", 10, 30, 20, 0, 0, 160, 78);
+test.addHelmet(helmet);
+Armor gloves("Mittens", 15, 0, 40, 30, 0, 130, 82);
+test.addGloves(gloves);
+Armor boots("Cleats", 20, 30, 0, 30, 10, 140, 80);
+test.addBoots(boots);
+Armor chest("Bullet Proof Vest", 20, 20, 20, 0, 0, 280, 90);
+test.addChest(chest);
+//  name,  cost,  fres,  eres,  cres,  chres,  arm,  health,  shield,  rating
+Jewlry ring1("SuperBowl XVII Ring", 25, 20, 20, 30, 0, 0, 66);
+test.addRing1(ring1);
+Jewlry ring2("Engagement Ring", 35, 40, 40, 0, 0, 0, 62);
+test.addRing2(ring2);
+Jewlry amulet("Neck Tie", 40, 0, 25, 25, 0, 0, 76);
+test.addAmulet(amulet);
+Jewlry belt("Gucci Belt", 50, 0, 20, 20, 10, 203, 102);
+test.addBelt(belt);
+*/

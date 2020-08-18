@@ -1,0 +1,6 @@
+﻿  loadout.cpp
+C:\Users\airru\source\repos\Project3plain\Project3plain\loadout.cpp(95,18): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\airru\source\repos\Project3plain\Project3plain\loadout.cpp(212,81): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\airru\source\repos\Project3plain\Project3plain\loadout.cpp(324,79): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\airru\source\repos\Project3plain\Project3plain\loadout.cpp(368,42): warning C4101: 'es': unreferenced local variable
+  Project3plain.vcxproj -> C:\Users\airru\source\repos\Project3plain\Debug\Project3plain.exe

@@ -1,0 +1,608 @@
+Shotgun  50 Chaos   Rating:300
+Damage: 300   Attack Speed: 1   DPS: 300
+
+Katana  40 Chaos   Rating:250
+Damage: 100   Attack Speed: 2.5   DPS: 250
+
+Cleaver  20 Chaos   Rating:225
+Damage: 150   Attack Speed: 1.5   DPS: 225
+
+Polearm  30 Chaos   Rating:220
+Damage: 220   Attack Speed: 1   DPS: 220
+
+Mace  18 Chaos   Rating:187
+Damage: 140   Attack Speed: 1.34   DPS: 187.6
+
+Pistol  35 Chaos   Rating:180
+Damage: 60   Attack Speed: 3   DPS: 180
+
+Dagger  15 Chaos   Rating:140
+Damage: 40   Attack Speed: 3.5   DPS: 140
+
+Crossbow  14 Chaos   Rating:75
+Damage: 150   Attack Speed: 0.5   DPS: 75
+
+Broomstick  5 Chaos   Rating:75
+Damage: 30   Attack Speed: 2.5   DPS: 75
+
+Baseball Bat  10 Chaos   Rating:75
+Damage: 50   Attack Speed: 1.5   DPS: 75
+
+
+Hat4  10 Chaos   Rating:297
+Health: 93   Armor: 110   Shield: 0
+Fire Res:43 | Elec Res:40 | Cold Res:24 | Chaos Res:0
+
+Hat9  10 Chaos   Rating:272
+Health: 64   Armor: 135   Shield: 0
+Fire Res:45 | Elec Res:36 | Cold Res:24 | Chaos Res:0
+
+Hat8  10 Chaos   Rating:243
+Health: 79   Armor: 150   Shield: 0
+Fire Res:0 | Elec Res:0 | Cold Res:22 | Chaos Res:40
+
+Hat2  10 Chaos   Rating:239
+Health: 75   Armor: 120   Shield: 0
+Fire Res:40 | Elec Res:40 | Cold Res:0 | Chaos Res:0
+
+Hat5  10 Chaos   Rating:239
+Health: 87   Armor: 140   Shield: 0
+Fire Res:0 | Elec Res:29 | Cold Res:40 | Chaos Res:0
+
+Hat3  10 Chaos   Rating:230
+Health: 77   Armor: 90   Shield: 0
+Fire Res:24 | Elec Res:27 | Cold Res:28 | Chaos Res:0
+
+Hat10  10 Chaos   Rating:215
+Health: 93   Armor: 105   Shield: 0
+Fire Res:33 | Elec Res:24 | Cold Res:0 | Chaos Res:0
+
+Hat6  10 Chaos   Rating:204
+Health: 80   Armor: 100   Shield: 0
+Fire Res:28 | Elec Res:31 | Cold Res:0 | Chaos Res:0
+
+Hat7  10 Chaos   Rating:194
+Health: 59   Armor: 70   Shield: 0
+Fire Res:0 | Elec Res:32 | Cold Res:0 | Chaos Res:30
+
+Hat1  10 Chaos   Rating:192
+Health: 64   Armor: 160   Shield: 0
+Fire Res:30 | Elec Res:0 | Cold Res:20 | Chaos Res:0
+
+
+Gloves8  15 Chaos   Rating:299
+Health: 94   Armor: 136   Shield: 0
+Fire Res:31 | Elec Res:28 | Cold Res:44 | Chaos Res:0
+
+Gloves9  15 Chaos   Rating:286
+Health: 66   Armor: 127   Shield: 0
+Fire Res:44 | Elec Res:36 | Cold Res:34 | Chaos Res:0
+
+Gloves7  15 Chaos   Rating:282
+Health: 77   Armor: 131   Shield: 0
+Fire Res:38 | Elec Res:44 | Cold Res:22 | Chaos Res:0
+
+Gloves2  15 Chaos   Rating:266
+Health: 86   Armor: 167   Shield: 0
+Fire Res:29 | Elec Res:26 | Cold Res:0 | Chaos Res:20
+
+Gloves10  15 Chaos   Rating:260
+Health: 88   Armor: 143   Shield: 0
+Fire Res:0 | Elec Res:0 | Cold Res:35 | Chaos Res:35
+
+Gloves3  15 Chaos   Rating:255
+Health: 88   Armor: 101   Shield: 0
+Fire Res:45 | Elec Res:41 | Cold Res:0 | Chaos Res:0
+
+Gloves6  15 Chaos   Rating:252
+Health: 87   Armor: 120   Shield: 0
+Fire Res:38 | Elec Res:0 | Cold Res:43 | Chaos Res:0
+
+Mittens  15 Chaos   Rating:233
+Health: 82   Armor: 130   Shield: 0
+Fire Res:0 | Elec Res:30 | Cold Res:40 | Chaos Res:0
+
+Gloves5  15 Chaos   Rating:223
+Health: 94   Armor: 75   Shield: 0
+Fire Res:25 | Elec Res:42 | Cold Res:0 | Chaos Res:0
+
+Gloves4  15 Chaos   Rating:206
+Health: 87   Armor: 72   Shield: 0
+Fire Res:23 | Elec Res:0 | Cold Res:38 | Chaos Res:0
+
+
+Boots4  20 Chaos   Rating:325
+Health: 93   Armor: 114   Shield: 0
+Fire Res:39 | Elec Res:44 | Cold Res:41 | Chaos Res:0
+
+Boots3  20 Chaos   Rating:296
+Health: 86   Armor: 132   Shield: 0
+Fire Res:26 | Elec Res:43 | Cold Res:38 | Chaos Res:0
+
+Boots8  20 Chaos   Rating:279
+Health: 71   Armor: 150   Shield: 0
+Fire Res:44 | Elec Res:23 | Cold Res:35 | Chaos Res:0
+
+Boots6  20 Chaos   Rating:274
+Health: 74   Armor: 151   Shield: 0
+Fire Res:24 | Elec Res:35 | Cold Res:38 | Chaos Res:0
+
+Boots10  20 Chaos   Rating:272
+Health: 94   Armor: 105   Shield: 0
+Fire Res:32 | Elec Res:23 | Cold Res:0 | Chaos Res:28
+
+Boots5  20 Chaos   Rating:267
+Health: 72   Armor: 141   Shield: 0
+Fire Res:22 | Elec Res:34 | Cold Res:40 | Chaos Res:0
+
+Cleats  20 Chaos   Rating:260
+Health: 80   Armor: 140   Shield: 0
+Fire Res:30 | Elec Res:30 | Cold Res:0 | Chaos Res:20
+
+Boots2  20 Chaos   Rating:260
+Health: 92   Armor: 129   Shield: 0
+Fire Res:0 | Elec Res:42 | Cold Res:0 | Chaos Res:30
+
+Boots7  20 Chaos   Rating:235
+Health: 84   Armor: 143   Shield: 0
+Fire Res:41 | Elec Res:0 | Cold Res:27 | Chaos Res:0
+
+Boots9  20 Chaos   Rating:229
+Health: 56   Armor: 85   Shield: 0
+Fire Res:0 | Elec Res:0 | Cold Res:45 | Chaos Res:36
+
+
+Chest7  20 Chaos   Rating:390
+Health: 117   Armor: 469   Shield: 0
+Fire Res:0 | Elec Res:27 | Cold Res:22 | Chaos Res:26
+
+Chest5  20 Chaos   Rating:382
+Health: 94   Armor: 445   Shield: 0
+Fire Res:33 | Elec Res:28 | Cold Res:36 | Chaos Res:0
+
+Chest2  20 Chaos   Rating:381
+Health: 109   Armor: 406   Shield: 0
+Fire Res:27 | Elec Res:31 | Cold Res:36 | Chaos Res:0
+
+Chest3  20 Chaos   Rating:362
+Health: 77   Armor: 318   Shield: 0
+Fire Res:37 | Elec Res:43 | Cold Res:39 | Chaos Res:0
+
+Chest4  20 Chaos   Rating:345
+Health: 85   Armor: 467   Shield: 0
+Fire Res:44 | Elec Res:31 | Cold Res:0 | Chaos Res:0
+
+Chest6  20 Chaos   Rating:329
+Health: 113   Armor: 251   Shield: 0
+Fire Res:26 | Elec Res:28 | Cold Res:34 | Chaos Res:0
+
+Bullet Proof Vest  20 Chaos   Rating:313
+Health: 90   Armor: 280   Shield: 0
+Fire Res:20 | Elec Res:0 | Cold Res:20 | Chaos Res:36
+
+Chest9  20 Chaos   Rating:313
+Health: 99   Armor: 288   Shield: 0
+Fire Res:42 | Elec Res:38 | Cold Res:0 | Chaos Res:0
+
+Chest10  20 Chaos   Rating:308
+Health: 97   Armor: 242   Shield: 0
+Fire Res:42 | Elec Res:0 | Cold Res:45 | Chaos Res:0
+
+Chest8  20 Chaos   Rating:294
+Health: 75   Armor: 358   Shield: 0
+Fire Res:29 | Elec Res:41 | Cold Res:0 | Chaos Res:0
+
+
+Ring8  25 Chaos   Rating:269
+Health: 98   Armor: 0   Shield: 0
+Fire Res:34 | Elec Res:38 | Cold Res:0 | Chaos Res:27
+
+Ring6  25 Chaos   Rating:267
+Health: 83   Armor: 0   Shield: 0
+Fire Res:34 | Elec Res:42 | Cold Res:39 | Chaos Res:0
+
+Ring5  25 Chaos   Rating:263
+Health: 75   Armor: 0   Shield: 0
+Fire Res:43 | Elec Res:38 | Cold Res:37 | Chaos Res:0
+
+Ring9  25 Chaos   Rating:248
+Health: 88   Armor: 0   Shield: 0
+Fire Res:0 | Elec Res:24 | Cold Res:21 | Chaos Res:42
+
+Ring4  25 Chaos   Rating:242
+Health: 70   Armor: 0   Shield: 0
+Fire Res:34 | Elec Res:39 | Cold Res:35 | Chaos Res:0
+
+Ring3  25 Chaos   Rating:234
+Health: 89   Armor: 58   Shield: 0
+Fire Res:42 | Elec Res:38 | Cold Res:0 | Chaos Res:0
+
+Ring10  25 Chaos   Rating:227
+Health: 59   Armor: 0   Shield: 0
+Fire Res:44 | Elec Res:27 | Cold Res:34 | Chaos Res:0
+
+Ring2  25 Chaos   Rating:224
+Health: 68   Armor: 0   Shield: 0
+Fire Res:24 | Elec Res:41 | Cold Res:0 | Chaos Res:25
+
+Ring7  25 Chaos   Rating:210
+Health: 62   Armor: 96   Shield: 0
+Fire Res:0 | Elec Res:33 | Cold Res:42 | Chaos Res:0
+
+SuperBowl XVII Ring  25 Chaos   Rating:178
+Health: 66   Armor: 0   Shield: 0
+Fire Res:20 | Elec Res:30 | Cold Res:20 | Chaos Res:0
+
+
+Ring9  25 Chaos   Rating:294
+Health: 96   Armor: 0   Shield: 0
+Fire Res:45 | Elec Res:43 | Cold Res:36 | Chaos Res:0
+
+Ring4  25 Chaos   Rating:263
+Health: 84   Armor: 0   Shield: 0
+Fire Res:0 | Elec Res:43 | Cold Res:23 | Chaos Res:35
+
+Ring3  25 Chaos   Rating:262
+Health: 69   Armor: 0   Shield: 0
+Fire Res:36 | Elec Res:44 | Cold Res:41 | Chaos Res:0
+
+Ring2  25 Chaos   Rating:260
+Health: 60   Armor: 0   Shield: 0
+Fire Res:39 | Elec Res:45 | Cold Res:41 | Chaos Res:0
+
+Ring7  25 Chaos   Rating:256
+Health: 94   Armor: 117   Shield: 0
+Fire Res:0 | Elec Res:22 | Cold Res:0 | Chaos Res:44
+
+Ring6  25 Chaos   Rating:251
+Health: 56   Armor: 87   Shield: 0
+Fire Res:45 | Elec Res:0 | Cold Res:32 | Chaos Res:22
+
+Ring8  25 Chaos   Rating:251
+Health: 89   Armor: 109   Shield: 0
+Fire Res:0 | Elec Res:38 | Cold Res:43 | Chaos Res:0
+
+Ring5  25 Chaos   Rating:235
+Health: 84   Armor: 114   Shield: 0
+Fire Res:31 | Elec Res:0 | Cold Res:42 | Chaos Res:0
+
+Engagement Ring  35 Chaos   Rating:231
+Health: 62   Armor: 0   Shield: 0
+Fire Res:40 | Elec Res:26 | Cold Res:40 | Chaos Res:0
+
+Ring10  25 Chaos   Rating:215
+Health: 79   Armor: 98   Shield: 0
+Fire Res:0 | Elec Res:24 | Cold Res:43 | Chaos Res:0
+
+
+Amulet9  40 Chaos   Rating:266
+Health: 86   Armor: 0   Shield: 0
+Fire Res:33 | Elec Res:40 | Cold Res:40 | Chaos Res:0
+
+Amulet3  40 Chaos   Rating:265
+Health: 80   Armor: 0   Shield: 0
+Fire Res:43 | Elec Res:33 | Cold Res:40 | Chaos Res:0
+
+Amulet7  40 Chaos   Rating:250
+Health: 58   Armor: 108   Shield: 0
+Fire Res:41 | Elec Res:0 | Cold Res:0 | Chaos Res:45
+
+Amulet6  40 Chaos   Rating:246
+Health: 85   Armor: 0   Shield: 0
+Fire Res:21 | Elec Res:43 | Cold Res:37 | Chaos Res:0
+
+Neck Tie  40 Chaos   Rating:242
+Health: 76   Armor: 0   Shield: 0
+Fire Res:0 | Elec Res:25 | Cold Res:25 | Chaos Res:41
+
+Amulet10  40 Chaos   Rating:241
+Health: 65   Armor: 0   Shield: 0
+Fire Res:45 | Elec Res:43 | Cold Res:22 | Chaos Res:0
+
+Amulet5  40 Chaos   Rating:240
+Health: 85   Armor: 0   Shield: 0
+Fire Res:26 | Elec Res:0 | Cold Res:42 | Chaos Res:22
+
+Amulet2  40 Chaos   Rating:236
+Health: 77   Armor: 116   Shield: 0
+Fire Res:0 | Elec Res:44 | Cold Res:34 | Chaos Res:0
+
+Amulet8  40 Chaos   Rating:228
+Health: 62   Armor: 0   Shield: 0
+Fire Res:45 | Elec Res:32 | Cold Res:27 | Chaos Res:0
+
+Amulet4  40 Chaos   Rating:219
+Health: 79   Armor: 123   Shield: 0
+Fire Res:41 | Elec Res:24 | Cold Res:0 | Chaos Res:0
+
+
+Gucci Belt  50 Chaos   Rating:308
+Health: 102   Armor: 203   Shield: 0
+Fire Res:0 | Elec Res:20 | Cold Res:20 | Chaos Res:39
+
+Belt4  50 Chaos   Rating:304
+Health: 102   Armor: 169   Shield: 0
+Fire Res:21 | Elec Res:0 | Cold Res:32 | Chaos Res:32
+
+Belt9  50 Chaos   Rating:271
+Health: 81   Armor: 103   Shield: 0
+Fire Res:24 | Elec Res:23 | Cold Res:0 | Chaos Res:40
+
+Belt10  50 Chaos   Rating:269
+Health: 88   Armor: 103   Shield: 0
+Fire Res:43 | Elec Res:25 | Cold Res:0 | Chaos Res:20
+
+Belt3  50 Chaos   Rating:265
+Health: 106   Armor: 134   Shield: 0
+Fire Res:22 | Elec Res:0 | Cold Res:0 | Chaos Res:40
+
+Belt8  50 Chaos   Rating:260
+Health: 91   Armor: 213   Shield: 0
+Fire Res:34 | Elec Res:32 | Cold Res:0 | Chaos Res:0
+
+Belt7  50 Chaos   Rating:259
+Health: 99   Armor: 208   Shield: 0
+Fire Res:31 | Elec Res:30 | Cold Res:0 | Chaos Res:0
+
+Belt2  50 Chaos   Rating:254
+Health: 89   Armor: 105   Shield: 0
+Fire Res:0 | Elec Res:40 | Cold Res:44 | Chaos Res:0
+
+Belt5  50 Chaos   Rating:210
+Health: 86   Armor: 90   Shield: 0
+Fire Res:0 | Elec Res:23 | Cold Res:38 | Chaos Res:0
+
+Belt6  50 Chaos   Rating:202
+Health: 89   Armor: 155   Shield: 0
+Fire Res:0 | Elec Res:0 | Cold Res:42 | Chaos Res:0
+
+0. Rating: 2385  Cost: 205   DPS: 300
+	Hp: 773   Armor: 998   Shield: 0
+	Fire Res: 256  Cold Res: 239  Elec Res: 253  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots4 Amulet3 Ring8 Ring9 Belt4
+
+1. Rating: 2382  Cost: 205   DPS: 300
+	Hp: 733   Armor: 854   Shield: 0
+	Fire Res: 252  Cold Res: 247  Elec Res: 248  Chaos Res: 94
+	Shotgun Hat4 Chest3 Gloves10 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+2. Rating: 2378  Cost: 205   DPS: 300
+	Hp: 779   Armor: 998   Shield: 0
+	Fire Res: 246  Cold Res: 239  Elec Res: 260  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+3. Rating: 2367  Cost: 205   DPS: 300
+	Hp: 761   Armor: 935   Shield: 0
+	Fire Res: 240  Cold Res: 238  Elec Res: 249  Chaos Res: 100
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Neck Tie Ring8 Ring9 Belt4
+
+4. Rating: 2365  Cost: 205   DPS: 300
+	Hp: 737   Armor: 998   Shield: 0
+	Fire Res: 250  Cold Res: 244  Elec Res: 255  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots4 Amulet3 Ring8 Ring2 Belt4
+
+5. Rating: 2364  Cost: 205   DPS: 300
+	Hp: 746   Armor: 998   Shield: 0
+	Fire Res: 247  Cold Res: 244  Elec Res: 254  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots4 Amulet3 Ring8 Ring3 Belt4
+
+6. Rating: 2362  Cost: 205   DPS: 300
+	Hp: 746   Armor: 974   Shield: 0
+	Fire Res: 246  Cold Res: 238  Elec Res: 246  Chaos Res: 100
+	Shotgun Hat4 Chest5 Gloves8 Boots4 Neck Tie Ring8 Ring9 Belt4
+
+7. Rating: 2358  Cost: 205   DPS: 300
+	Hp: 735   Armor: 989   Shield: 0
+	Fire Res: 235  Cold Res: 250  Elec Res: 247  Chaos Res: 100
+	Shotgun Hat4 Chest7 Gloves9 Boots4 Amulet3 Ring9 Ring9 Belt4
+
+8. Rating: 2355  Cost: 205   DPS: 300
+	Hp: 750   Armor: 1023   Shield: 0
+	Fire Res: 248  Cold Res: 239  Elec Res: 256  Chaos Res: 85
+	Shotgun Hat9 Chest7 Gloves8 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+9. Rating: 2354  Cost: 205   DPS: 300
+	Hp: 742   Armor: 900   Shield: 0
+	Fire Res: 250  Cold Res: 243  Elec Res: 249  Chaos Res: 81
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Neck Tie Ring5 Ring9 Belt3
+
+10. Rating: 2354  Cost: 205   DPS: 300
+	Hp: 727   Armor: 854   Shield: 0
+	Fire Res: 262  Cold Res: 247  Elec Res: 241  Chaos Res: 94
+	Shotgun Hat4 Chest3 Gloves10 Boots4 Amulet3 Ring8 Ring9 Belt4
+
+11. Rating: 2353  Cost: 205   DPS: 300
+	Hp: 738   Armor: 974   Shield: 0
+	Fire Res: 244  Cold Res: 240  Elec Res: 254  Chaos Res: 94
+	Shotgun Hat4 Chest5 Gloves8 Boots4 Amulet3 Ring8 Ring4 Belt4
+
+12. Rating: 2352  Cost: 205   DPS: 300
+	Hp: 744   Armor: 1023   Shield: 0
+	Fire Res: 258  Cold Res: 239  Elec Res: 249  Chaos Res: 85
+	Shotgun Hat9 Chest7 Gloves8 Boots4 Amulet3 Ring8 Ring9 Belt4
+
+13. Rating: 2351  Cost: 205   DPS: 300
+	Hp: 759   Armor: 900   Shield: 0
+	Fire Res: 250  Cold Res: 242  Elec Res: 243  Chaos Res: 82
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Amulet3 Ring9 Ring9 Belt3
+
+14. Rating: 2351  Cost: 205   DPS: 300
+	Hp: 700   Armor: 872   Shield: 0
+	Fire Res: 252  Cold Res: 241  Elec Res: 257  Chaos Res: 100
+	Shotgun Hat9 Chest3 Gloves8 Boots4 Neck Tie Ring8 Ring9 Belt4
+
+15. Rating: 2350  Cost: 205   DPS: 300
+	Hp: 723   Armor: 876   Shield: 0
+	Fire Res: 255  Cold Res: 251  Elec Res: 256  Chaos Res: 75
+	Shotgun Hat4 Chest2 Gloves10 Boots4 Amulet3 Ring6 Ring9 Belt9
+
+16. Rating: 2350  Cost: 205   DPS: 300
+	Hp: 697   Armor: 854   Shield: 0
+	Fire Res: 246  Cold Res: 252  Elec Res: 250  Chaos Res: 94
+	Shotgun Hat4 Chest3 Gloves10 Boots4 Amulet9 Ring8 Ring2 Belt4
+
+17. Rating: 2349  Cost: 205   DPS: 300
+	Hp: 753   Armor: 935   Shield: 0
+	Fire Res: 238  Cold Res: 240  Elec Res: 257  Chaos Res: 94
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Amulet3 Ring8 Ring4 Belt4
+
+18. Rating: 2349  Cost: 205   DPS: 300
+	Hp: 734   Armor: 869   Shield: 0
+	Fire Res: 252  Cold Res: 242  Elec Res: 266  Chaos Res: 82
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Amulet3 Ring9 Ring9 Belt9
+
+19. Rating: 2348  Cost: 205   DPS: 300
+	Hp: 735   Armor: 939   Shield: 0
+	Fire Res: 247  Cold Res: 245  Elec Res: 250  Chaos Res: 81
+	Shotgun Hat4 Chest5 Gloves8 Boots4 Neck Tie Ring6 Ring9 Belt3
+
+20. Rating: 2348  Cost: 205   DPS: 300
+	Hp: 765   Armor: 900   Shield: 0
+	Fire Res: 240  Cold Res: 242  Elec Res: 250  Chaos Res: 82
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Amulet9 Ring9 Ring9 Belt3
+
+21. Rating: 2348  Cost: 205   DPS: 300
+	Hp: 718   Armor: 989   Shield: 0
+	Fire Res: 235  Cold Res: 251  Elec Res: 253  Chaos Res: 99
+	Shotgun Hat4 Chest7 Gloves9 Boots4 Neck Tie Ring5 Ring9 Belt4
+
+22. Rating: 2347  Cost: 205   DPS: 300
+	Hp: 732   Armor: 854   Shield: 0
+	Fire Res: 240  Cold Res: 244  Elec Res: 251  Chaos Res: 94
+	Shotgun Hat4 Chest3 Gloves10 Boots4 Amulet6 Ring8 Ring9 Belt4
+
+23. Rating: 2346  Cost: 205   DPS: 300
+	Hp: 766   Armor: 1016   Shield: 0
+	Fire Res: 243  Cold Res: 236  Elec Res: 252  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots3 Amulet3 Ring8 Ring9 Belt4
+
+24. Rating: 2345  Cost: 205   DPS: 300
+	Hp: 741   Armor: 989   Shield: 0
+	Fire Res: 225  Cold Res: 250  Elec Res: 254  Chaos Res: 100
+	Shotgun Hat4 Chest7 Gloves9 Boots4 Amulet9 Ring9 Ring9 Belt4
+
+25. Rating: 2345  Cost: 205   DPS: 300
+	Hp: 733   Armor: 926   Shield: 0
+	Fire Res: 253  Cold Res: 228  Elec Res: 257  Chaos Res: 100
+	Shotgun Hat4 Chest2 Gloves9 Boots4 Neck Tie Ring8 Ring9 Belt4
+
+26. Rating: 2345  Cost: 205   DPS: 300
+	Hp: 706   Armor: 854   Shield: 0
+	Fire Res: 243  Cold Res: 252  Elec Res: 249  Chaos Res: 94
+	Shotgun Hat4 Chest3 Gloves10 Boots4 Amulet9 Ring8 Ring3 Belt4
+
+27. Rating: 2344  Cost: 205   DPS: 300
+	Hp: 750   Armor: 900   Shield: 0
+	Fire Res: 241  Cold Res: 245  Elec Res: 253  Chaos Res: 81
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Neck Tie Ring6 Ring9 Belt3
+
+28. Rating: 2344  Cost: 205   DPS: 300
+	Hp: 721   Armor: 876   Shield: 0
+	Fire Res: 254  Cold Res: 249  Elec Res: 259  Chaos Res: 75
+	Shotgun Hat4 Chest2 Gloves10 Boots4 Amulet9 Ring5 Ring9 Belt9
+
+29. Rating: 2342  Cost: 205   DPS: 300
+	Hp: 750   Armor: 939   Shield: 0
+	Fire Res: 246  Cold Res: 242  Elec Res: 247  Chaos Res: 82
+	Shotgun Hat4 Chest5 Gloves8 Boots4 Amulet9 Ring9 Ring9 Belt3
+
+30. Rating: 2342  Cost: 205   DPS: 300
+	Hp: 765   Armor: 942   Shield: 0
+	Fire Res: 242  Cold Res: 244  Elec Res: 236  Chaos Res: 94
+	Shotgun Hat4 Chest2 Gloves10 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+31. Rating: 2341  Cost: 205   DPS: 300
+	Hp: 712   Armor: 999   Shield: 0
+	Fire Res: 247  Cold Res: 252  Elec Res: 268  Chaos Res: 81
+	Shotgun Hat4 Chest5 Gloves9 Boots4 Amulet3 Ring9 Ring9 Gucci Belt
+
+32. Rating: 2341  Cost: 205   DPS: 300
+	Hp: 714   Armor: 915   Shield: 0
+	Fire Res: 251  Cold Res: 251  Elec Res: 260  Chaos Res: 75
+	Shotgun Hat4 Chest5 Gloves10 Boots4 Amulet9 Ring6 Ring9 Belt9
+
+33. Rating: 2341  Cost: 205   DPS: 300
+	Hp: 759   Armor: 942   Shield: 0
+	Fire Res: 252  Cold Res: 244  Elec Res: 229  Chaos Res: 94
+	Shotgun Hat4 Chest2 Gloves10 Boots4 Amulet3 Ring8 Ring9 Belt4
+
+34. Rating: 2341  Cost: 205   DPS: 300
+	Hp: 717   Armor: 1023   Shield: 0
+	Fire Res: 249  Cold Res: 244  Elec Res: 250  Chaos Res: 85
+	Shotgun Hat9 Chest7 Gloves8 Boots4 Amulet3 Ring8 Ring3 Belt4
+
+35. Rating: 2341  Cost: 205   DPS: 300
+	Hp: 704   Armor: 879   Shield: 0
+	Fire Res: 254  Cold Res: 247  Elec Res: 244  Chaos Res: 94
+	Shotgun Hat9 Chest3 Gloves10 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+36. Rating: 2340  Cost: 205   DPS: 300
+	Hp: 729   Armor: 876   Shield: 0
+	Fire Res: 245  Cold Res: 251  Elec Res: 263  Chaos Res: 75
+	Shotgun Hat4 Chest2 Gloves10 Boots4 Amulet9 Ring6 Ring9 Belt9
+
+37. Rating: 2340  Cost: 205   DPS: 300
+	Hp: 700   Armor: 854   Shield: 0
+	Fire Res: 253  Cold Res: 252  Elec Res: 242  Chaos Res: 94
+	Shotgun Hat4 Chest3 Gloves10 Boots4 Amulet3 Ring8 Ring3 Belt4
+
+38. Rating: 2339  Cost: 205   DPS: 300
+	Hp: 752   Armor: 998   Shield: 0
+	Fire Res: 237  Cold Res: 244  Elec Res: 261  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots4 Amulet9 Ring8 Ring3 Belt4
+
+39. Rating: 2339  Cost: 205   DPS: 300
+	Hp: 743   Armor: 998   Shield: 0
+	Fire Res: 240  Cold Res: 244  Elec Res: 262  Chaos Res: 85
+	Shotgun Hat4 Chest7 Gloves8 Boots4 Amulet9 Ring8 Ring2 Belt4
+
+40. Rating: 2338  Cost: 205   DPS: 300
+	Hp: 734   Armor: 900   Shield: 0
+	Fire Res: 248  Cold Res: 245  Elec Res: 257  Chaos Res: 75
+	Shotgun Hat4 Chest2 Gloves8 Boots4 Amulet3 Ring5 Ring4 Belt3
+
+41. Rating: 2338  Cost: 205   DPS: 300
+	Hp: 716   Armor: 964   Shield: 0
+	Fire Res: 248  Cold Res: 259  Elec Res: 252  Chaos Res: 76
+	Shotgun Hat4 Chest3 Gloves8 Boots4 Amulet3 Ring6 Ring7 Belt4
+
+42. Rating: 2338  Cost: 205   DPS: 300
+	Hp: 715   Armor: 876   Shield: 0
+	Fire Res: 264  Cold Res: 249  Elec Res: 252  Chaos Res: 75
+	Shotgun Hat4 Chest2 Gloves10 Boots4 Amulet3 Ring5 Ring9 Belt9
+
+43. Rating: 2337  Cost: 205   DPS: 300
+	Hp: 727   Armor: 960   Shield: 0
+	Fire Res: 241  Cold Res: 252  Elec Res: 271  Chaos Res: 81
+	Shotgun Hat4 Chest2 Gloves9 Boots4 Amulet3 Ring9 Ring9 Gucci Belt
+
+44. Rating: 2337  Cost: 205   DPS: 300
+	Hp: 750   Armor: 981   Shield: 0
+	Fire Res: 248  Cold Res: 244  Elec Res: 233  Chaos Res: 94
+	Shotgun Hat4 Chest5 Gloves10 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+45. Rating: 2336  Cost: 205   DPS: 300
+	Hp: 708   Armor: 1023   Shield: 0
+	Fire Res: 252  Cold Res: 244  Elec Res: 251  Chaos Res: 85
+	Shotgun Hat9 Chest7 Gloves8 Boots4 Amulet3 Ring8 Ring2 Belt4
+
+46. Rating: 2336  Cost: 205   DPS: 300
+	Hp: 697   Armor: 878   Shield: 0
+	Fire Res: 253  Cold Res: 244  Elec Res: 244  Chaos Res: 99
+	Shotgun Hat8 Chest3 Gloves9 Boots4 Amulet9 Ring8 Ring9 Belt4
+
+47. Rating: 2335  Cost: 205   DPS: 300
+	Hp: 708   Armor: 915   Shield: 0
+	Fire Res: 261  Cold Res: 251  Elec Res: 253  Chaos Res: 75
+	Shotgun Hat4 Chest5 Gloves10 Boots4 Amulet3 Ring6 Ring9 Belt9
+
+48. Rating: 2335  Cost: 205   DPS: 300
+	Hp: 692   Armor: 872   Shield: 0
+	Fire Res: 250  Cold Res: 243  Elec Res: 265  Chaos Res: 94
+	Shotgun Hat9 Chest3 Gloves8 Boots4 Amulet3 Ring8 Ring4 Belt4
+
+49. Rating: 2334  Cost: 205   DPS: 300
+	Hp: 719   Armor: 908   Shield: 0
+	Fire Res: 258  Cold Res: 242  Elec Res: 263  Chaos Res: 82
+	Shotgun Hat4 Chest5 Gloves8 Boots4 Amulet3 Ring9 Ring9 Belt9
+
