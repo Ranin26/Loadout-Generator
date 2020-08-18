@@ -275,41 +275,32 @@ void Pool::addItem(Pool& pool, string type, int& l, t& tempItem)
 			*amuletPool[m] = tempItem;
 		}
 		else if (type == "ring1") {
-			cout << "hi type = ring1" << "\n";
 			m = l;
 			while (m > 0 && ring1Pool[m - 1]->getRating() < tempItem.getRating())
 			{
-				cout << "m = " << m << "\n";
 				*ring1Pool[m] = *ring1Pool[m - 1];
 				m--;
 			}
-			cout << "ring1Pool[m] = tempItem" << "\n";
 			*ring1Pool[m] = tempItem;
 		}
 		else if (type == "ring2") {
-			cout << "hi type = ring2" << "\n";
 			m = l;
 			while (m > 0 && ring2Pool[m - 1]->getRating() < tempItem.getRating())
 			{
-				cout << "m = " << m << "\n";
 				*ring2Pool[m] = *ring2Pool[m - 1];
 				m--;
 			}
 			*ring2Pool[m] = tempItem;
-			cout << "ring2Pool[m] = tempItem" << "\n";
 			cout << "l = " << l << "\n";
 		}
 		else if (type == "belt") {
-			cout << "hi type = belt" << "\n";
 			m = l;
 			while (m > 0 && beltPool[m - 1]->getRating() < tempItem.getRating())
 			{
-				cout << "m = " << m << "\n";
 				*beltPool[m] = *beltPool[m - 1];
 				m--;
 			}
 			*beltPool[m] = tempItem;
-			cout << "beltPool[m] = tempItem" << "\n";
 		}
 	}
 }

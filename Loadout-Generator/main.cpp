@@ -19,7 +19,6 @@ int main()
 
 	cout << "Calculating best loadouts. May take some time. Please wait.\n";
 	pool.bestLoadouts(best);
-	//cout << "bestLoadouts()\n";
 	printLoadouts(best, fout);
 	cout << "Calculations Done.\n";
 	fout.close();

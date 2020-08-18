@@ -1,4 +1,65 @@
-﻿  main.cpp
+﻿  loadout.cpp
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(37,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(38,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(40,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(42,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): warning C4984: 'if constexpr' is a C++17 language extension
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): warning C4984: 'if constexpr' is a C++17 language extension
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(72,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(160,95): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(229,96): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(329,30): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(332,49): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(335,49): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(338,49): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(341,73): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(354,142): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(429,18): warning C4244: '=': conversion from 'unsigned __int64' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(575,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(576,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(577,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(578,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(579,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(617,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(618,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(619,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(620,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(621,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(659,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(660,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(661,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(662,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(663,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(701,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(702,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(703,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(704,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(705,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(743,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(744,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(745,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(746,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(747,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(785,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(786,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(787,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(788,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(789,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(827,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(828,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(829,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(830,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(831,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(869,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(870,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(871,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(872,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(873,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.cpp(503,42): warning C4101: 'es': unreferenced local variable
+  main.cpp
 H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(37,29): warning C4305: 'initializing': truncation from 'double' to 'float'
 H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(38,29): warning C4305: 'initializing': truncation from 'double' to 'float'
 H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(39,29): warning C4305: 'initializing': truncation from 'double' to 'float'
@@ -18,21 +79,21 @@ H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): 
 H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(228,2): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
 H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): warning C4984: 'if constexpr' is a C++17 language extension
 H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\loadout.h(267,7): message : This diagnostic occurred in the compiler generated function 'void Pool::addItem(Pool &,std::string,int &,t &)'
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(124,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(128,5): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(129,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(246,42): warning C4018: '<': signed/unsigned mismatch
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(217,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(234,9): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(235,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(236,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(237,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(238,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(500,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(519,13): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(528,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(532,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(536,9): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(537,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(122,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(126,5): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(127,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(140,5): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(141,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(142,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(143,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(144,5): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(242,42): warning C4018: '<': signed/unsigned mismatch
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(213,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(482,5): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(498,13): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(507,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(511,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(515,9): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\Airru\Documents\GitHub\Loadout-Generator\Loadout-Generator\queryItems.cpp(516,9): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Generating Code...
   Loadout-Generator.vcxproj -> H:\Airru\Documents\GitHub\Loadout-Generator\x64\Debug\Loadout-Generator.exe

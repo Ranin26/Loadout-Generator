@@ -7,8 +7,6 @@ void queryItems(Pool &pool) {
     const LPCTSTR client = L"testing123";
     const LPCWSTR domain = L"www.pathofexile.com";
 
-    string hey = "hey";
-
     char* leaguesJson = NULL;
     jsonRequest(leaguesJson, client, domain, L"/api/trade/data/leagues", L"GET");
 
@@ -17,7 +15,6 @@ void queryItems(Pool &pool) {
 
     char* chestResJson = NULL;
     tradeQuery(chestResJson, url, pool);
-    cout << "hello\n";
 }
 
 void jsonRequest(char*& oldOutBuffer, LPCTSTR client, LPCWSTR host, LPCWSTR url, LPCWSTR method, LPCWSTR additionalHeaders, DWORD headersLength, LPSTR pszData, DWORD pszLength)
@@ -59,7 +56,6 @@ void jsonRequest(char*& oldOutBuffer, LPCTSTR client, LPCWSTR host, LPCWSTR url,
     {
         do
         {
-            cout << "hi111\n";
             // Check for available data.
             dwSize = 0;
             if (!WinHttpQueryDataAvailable(hRequest, &dwSize))
@@ -108,7 +104,6 @@ void jsonRequest(char*& oldOutBuffer, LPCTSTR client, LPCWSTR host, LPCWSTR url,
     if (hRequest) WinHttpCloseHandle(hRequest);
     if (hConnect) WinHttpCloseHandle(hConnect);
     if (hSession) WinHttpCloseHandle(hSession);
-    cout << "hi112\n";
 }
 
 void getTradeUrl(char *&leaguesJson, wchar_t *&url)
@@ -135,9 +130,15 @@ void convertCurrency(string currency, float &price)
 {
 }
 
-void getFetchUrl(wchar_t*& url)
+void getFetchUrl(wchar_t*& url, wchar_t*& temp, wchar_t*& keys)
 {
-
+    size_t _size = wcslen(temp)+1;
+    url = new wchar_t[17 + wcslen(keys) + _size + 7 + 317]; // len of all components of the url
+    wcscpy(url, L"/api/trade/fetch/");
+    wcscat(url, keys);
+    wcscat(url, L"?query=");
+    wcscat(url, temp);
+    wcscat(url, L"&pseudos[]=pseudo.pseudo_total_elemental_resistance&pseudos[]=pseudo.pseudo_total_life&pseudos[]=pseudo.pseudo_total_cold_resistance&pseudos[]=pseudo.pseudo_total_fire_resistance&pseudos[]=pseudo.pseudo_total_lightning_resistance&pseudos[]=pseudo.pseudo_total_chaos_resistance&pseudos[]=pseudo.pseudo_total_resistance");
 }
 
 void tradeQuery(char *&ResJson, wchar_t *&url, Pool& pool)
@@ -152,19 +153,13 @@ void tradeQuery(char *&ResJson, wchar_t *&url, Pool& pool)
     //cout << queryJson("chest", query.chestQuery).c_str() << endl;
     qstr = queryJson("chest", query.chestQuery);
     chestQuery = (LPSTR)qstr.c_str();
-    cout << "here" << endl;
     cout << chestQuery << endl;
 
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, chestQuery, (DWORD)strlen(chestQuery));
     processQueryKeys(keys, ResJson, pool, "chest");
 
-    //q.str(string());
-   // q.clear();
-
     qstr = queryJson("helmet", query.helmetQuery);
     helmetQuery = (LPSTR)qstr.c_str();
-    cout << "hur" << endl;
-    cout << helmetQuery << endl;
 
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, helmetQuery, (DWORD)strlen(helmetQuery));
     processQueryKeys(keys, ResJson, pool, "helmet");
@@ -201,8 +196,6 @@ void tradeQuery(char *&ResJson, wchar_t *&url, Pool& pool)
 
     qstr = queryJson("amulet", query.amuletQuery);
     amuletQuery = (LPSTR)qstr.c_str();
-    
-    cout << "amulet query" << amuletQuery << endl;
 
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, amuletQuery, (DWORD)strlen(amuletQuery));
     processQueryKeys(keys, ResJson, pool, "amulet");
@@ -222,7 +215,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
     int l = 0;
     for (c = 0; c <= j; c++)
     {
-        cout << "hi3\n";
         if (c > 0 && c % 2 == 0)
         {
             cout << "12 item limit reached. 6 second cooldown..\n";
@@ -230,12 +222,13 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
         }
         Document doc;
         cout << "\n===========================================================================\n" << "\n";
-        url = new wchar_t[17 + wcslen(keys[c]) + size + 7 + 317];
+        /*url = new wchar_t[17 + wcslen(keys[c]) + size + 7 + 317];
         wcscpy(url, L"/api/trade/fetch/");
         wcscat(url, keys[c]);
         wcscat(url, L"?query=");
         wcscat(url, temp);
-        wcscat(url, L"&pseudos[]=pseudo.pseudo_total_elemental_resistance&pseudos[]=pseudo.pseudo_total_life&pseudos[]=pseudo.pseudo_total_cold_resistance&pseudos[]=pseudo.pseudo_total_fire_resistance&pseudos[]=pseudo.pseudo_total_lightning_resistance&pseudos[]=pseudo.pseudo_total_chaos_resistance&pseudos[]=pseudo.pseudo_total_resistance");
+        wcscat(url, L"&pseudos[]=pseudo.pseudo_total_elemental_resistance&pseudos[]=pseudo.pseudo_total_life&pseudos[]=pseudo.pseudo_total_cold_resistance&pseudos[]=pseudo.pseudo_total_fire_resistance&pseudos[]=pseudo.pseudo_total_lightning_resistance&pseudos[]=pseudo.pseudo_total_chaos_resistance&pseudos[]=pseudo.pseudo_total_resistance");*/
+        getFetchUrl(url, temp, keys[c]);
         wcout << "\n" << c << " Url: " << url << endl;
         jsonRequest(resultsJson, L"testing123", L"www.pathofexile.com", url, L"GET");
         doc.Parse(resultsJson);
@@ -245,7 +238,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
         cout << buffer.GetString() << "\n";
         for (k = 0; k < MAX_RESULTS && k < doc["result"].Size(); k++)
         {
-            cout << "hi4\n";
             hp = 0;
             cost = 0;
             armor = 0;
@@ -267,7 +259,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                 Value& propertiesArr = doc["result"][k]["item"]["properties"];
                 for (i = 0; i < propertiesArr.Size(); i++)
                 {
-                    cout << "hi5\n";
                     string str = propertiesArr[i]["name"].GetString();
                     if (str == "Armour")
                     {
@@ -288,7 +279,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                 assert(!psModsArr.Empty());
                 for (i = 0; i < psModsArr.Size(); i++)
                 {
-                    cout << "hi6\n";
                     string mod = psModsArr[i].GetString();
                     if (!hp && mod.find("total maximum Life", 10) < mod.capacity())
                     {
@@ -322,7 +312,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                     }
                 }
             }
-            cout << "hi 6.1" << "\n";
             if (type == "chest") {
                 Armor tempChest;
                 tempChest.setName(name.GetString());
@@ -415,7 +404,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                 tempRing2.calcRating();
                 pool.addItem<Jewlry>(pool, type, l, tempRing2);
             } else if (type == "belt") {
-                cout << "hi belt" << "\n";
                 Jewlry tempBelt;
                 tempBelt.setName(name.GetString());
                 tempBelt.setId(ID);
@@ -427,11 +415,8 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                 tempBelt.setchRes(chRes);
                 tempBelt.setCost(cost);
                 tempBelt.calcRating();
-                cout << "hi pre POOL" << "\n";
                 pool.addItem<Jewlry>(pool, type, l, tempBelt);
-                cout << "hi post POOL" << "\n";
             }
-            cout << "hi 6.2" << "\n";
             cout << "Name :" << name.GetString() << "\n";
             cout << "Id :" << ID << "\n";
             cout << "Cost :" << cost << "\n";
@@ -463,7 +448,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
     delete[] url;
     for (c = 0; c < j; c++)
     {
-        cout << "hi7\n";
         delete[] keys[c];
     }
     delete[] keys;
@@ -471,7 +455,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
 
 void processQueryKeys(wchar_t **&keys, char*& ResJson, Pool& pool, string type)
 {
-    cout << "hi26\n";
     wchar_t* temp = NULL;
     Document d;
     d.Parse(ResJson);
@@ -483,32 +466,25 @@ void processQueryKeys(wchar_t **&keys, char*& ResJson, Pool& pool, string type)
     Value& id = d["id"];
     assert(keysArr.IsArray());
     assert(!keysArr.Empty());
-    cout << "hi224\n";
     if (keysArr.Size() < 1)
     {
         cout << "No results for " << type << ". Try again.\n";
         exit(1);
     }
     size_t size = keysArr[0].GetStringLength() + 1;
-    cout << "hi224.1\n";
     wchar_t ** temp2;
     keys = new wchar_t* [1];
-    cout << "hi224.2\n";
     int j = 0, c;
     keys[0] = new wchar_t[size + 1];//1 for comma
-    cout << "hi224.3\n";
     mbstowcs(keys[0], keysArr[0].GetString(), size);
-    cout << "hi224.4\n";
     for (SizeType i = 1; i < keysArr.Size(); i++) // Uses SizeType instead of size_t
     {
-        cout << "hi1\n";
         if (i % MAX_RESULTS == 0)
         {
             temp2 = keys;
             keys = new wchar_t* [++j + 1];
             for (c = 0; c < j; c++)
             {
-                cout << "hi2\n";
                 keys[c] = temp2[c];
             }
             delete[] temp2;
@@ -544,9 +520,7 @@ void processQueryKeys(wchar_t **&keys, char*& ResJson, Pool& pool, string type)
     //wcout << keys << "\n"; 
     // Output json
     //cout << buffer.GetString() << "\n";
-    cout << "hi8\n";
     processTradeResults(keys, id.GetString(), j, pool, type);
-    cout << "hi9\n";
 }
 
 void Query::setMinArmor(int min)
