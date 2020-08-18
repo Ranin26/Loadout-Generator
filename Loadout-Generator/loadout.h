@@ -291,7 +291,6 @@ void Pool::addItem(Pool& pool, string type, int& l, t& tempItem)
 				m--;
 			}
 			*ring2Pool[m] = tempItem;
-			cout << "l = " << l << "\n";
 		}
 		else if (type == "belt") {
 			m = l;
