@@ -1014,7 +1014,7 @@ void Pool::bestLoadouts(Loadout *&loadouts)
 										tempLoadout.calcStats();
 										if (tempLoadout.meetsMinimums())
 										{
-											tempLoadout.calcRating(); 
+											tempLoadout.calcRating();
 											rating = tempLoadout.getRating();
 											if (rating > minRating && rating > loadouts[MAX_LOADOUTS - 1].getRating())
 											{
