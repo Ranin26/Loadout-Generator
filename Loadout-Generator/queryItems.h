@@ -79,7 +79,7 @@ void queryItems(Pool &pool);
 void jsonRequest(char*& oldOutBuffer, LPCTSTR client, LPCWSTR host, LPCWSTR url, LPCWSTR method, LPCWSTR additionalHeaders = WINHTTP_NO_ADDITIONAL_HEADERS, DWORD headersLength = 0, LPSTR pszData = WINHTTP_NO_REQUEST_DATA, DWORD pszLength = 0);
 void convertCurrency(string currency, float& price);
 void getTradeUrl(char*& leaguesJson, wchar_t*& url);
-void getFetchUrl(wchar_t*& url);
+void getFetchUrl(wchar_t*& url, wchar_t*& temp, wchar_t*& keys);
 string queryJson(string type, Query &query);
 void tradeQuery(char*& ResJson, wchar_t*& url, Pool& pool);
 void processQueryKeys(wchar_t**& keys, char*& ResJson, Pool& pool, string type);

@@ -150,53 +150,44 @@ void tradeQuery(char *&ResJson, wchar_t *&url, Pool& pool)
     searchQuery query;
     query.readRequirements();
 
-    //cout << queryJson("chest", query.chestQuery).c_str() << endl;
     qstr = queryJson("chest", query.chestQuery);
     chestQuery = (LPSTR)qstr.c_str();
     cout << chestQuery << endl;
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, chestQuery, (DWORD)strlen(chestQuery));
     processQueryKeys(keys, ResJson, pool, "chest");
 
     qstr = queryJson("helmet", query.helmetQuery);
     helmetQuery = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, helmetQuery, (DWORD)strlen(helmetQuery));
     processQueryKeys(keys, ResJson, pool, "helmet");
 
     qstr = queryJson("gloves", query.glovesQuery);
     glovesQuery = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, glovesQuery, (DWORD)strlen(glovesQuery));
     processQueryKeys(keys, ResJson, pool, "gloves");
 
     qstr = queryJson("boots", query.bootsQuery);
     bootsQuery = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, bootsQuery, (DWORD)strlen(bootsQuery));
     processQueryKeys(keys, ResJson, pool, "boots");
 
     qstr = queryJson("belt", query.beltQuery);
     beltQuery = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, beltQuery, (DWORD)strlen(beltQuery));
     processQueryKeys(keys, ResJson, pool, "belt");
 
     qstr = queryJson("ring1", query.ring1Query);
     ring1Query = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, ring1Query, (DWORD)strlen(ring1Query));
     processQueryKeys(keys, ResJson, pool, "ring1");
 
     qstr = queryJson("ring2", query.ring2Query);
     ring2Query = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, ring2Query, (DWORD)strlen(ring2Query));
     processQueryKeys(keys, ResJson, pool, "ring2");
 
     qstr = queryJson("amulet", query.amuletQuery);
     amuletQuery = (LPSTR)qstr.c_str();
-
     jsonRequest(ResJson, L"testing123", L"www.pathofexile.com", url, L"POST", L"Content-Type: application/json\n", -1, amuletQuery, (DWORD)strlen(amuletQuery));
     processQueryKeys(keys, ResJson, pool, "amulet");
 }
@@ -209,44 +200,35 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
             *url = NULL;
     mbstowcs(temp, id, size);
     SizeType i;
-    int c = 0, k, hp, armor, fRes, cRes, eRes, chRes;
+    int c = 0, k, hp, armor, fRes, cRes, eRes, chRes, l = 0;
     string ID;
     float cost;
-    int l = 0;
     for (c = 0; c <= j; c++)
     {
         if (c > 0 && c % 2 == 0)
         {
+            //test threaded queries for each type.
             cout << "12 item limit reached. 6 second cooldown..\n";
             sleep_for(seconds(WAIT_TIME));
         }
         Document doc;
         cout << "\n===========================================================================\n" << "\n";
-        /*url = new wchar_t[17 + wcslen(keys[c]) + size + 7 + 317];
-        wcscpy(url, L"/api/trade/fetch/");
-        wcscat(url, keys[c]);
-        wcscat(url, L"?query=");
-        wcscat(url, temp);
-        wcscat(url, L"&pseudos[]=pseudo.pseudo_total_elemental_resistance&pseudos[]=pseudo.pseudo_total_life&pseudos[]=pseudo.pseudo_total_cold_resistance&pseudos[]=pseudo.pseudo_total_fire_resistance&pseudos[]=pseudo.pseudo_total_lightning_resistance&pseudos[]=pseudo.pseudo_total_chaos_resistance&pseudos[]=pseudo.pseudo_total_resistance");*/
         getFetchUrl(url, temp, keys[c]);
         wcout << "\n" << c << " Url: " << url << endl;
+
         jsonRequest(resultsJson, L"testing123", L"www.pathofexile.com", url, L"GET");
         doc.Parse(resultsJson);
         StringBuffer buffer;
         Writer<StringBuffer> writer(buffer);
         doc.Accept(writer);
         cout << buffer.GetString() << "\n";
+
         for (k = 0; k < MAX_RESULTS && k < doc["result"].Size(); k++)
         {
-            hp = 0;
-            cost = 0;
-            armor = 0;
-            fRes = 0;
-            cRes = 0;
-            eRes = 0;
-            chRes = 0;
+            hp = 0, cost = 0, armor = 0, fRes = 0, cRes = 0, eRes = 0, chRes = 0;
+
             ID = doc["result"][k]["id"].GetString();
-            if (!doc["result"][k]["listing"]["price"].IsNull())
+            if (!doc["result"][k]["listing"]["price"].IsNull()) //if there is a price set
             {
                 Value& price = doc["result"][k]["listing"]["price"]["amount"];
                 cost = price.GetFloat();
@@ -312,6 +294,7 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                     }
                 }
             }
+
             if (type == "chest") {
                 Armor tempChest;
                 tempChest.setName(name.GetString());
@@ -417,6 +400,7 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
                 tempBelt.calcRating();
                 pool.addItem<Jewlry>(pool, type, l, tempBelt);
             }
+
             cout << "Name :" << name.GetString() << "\n";
             cout << "Id :" << ID << "\n";
             cout << "Cost :" << cost << "\n";
@@ -436,15 +420,6 @@ void processTradeResults(wchar_t **&keys, const char* id, int j, Pool& pool, str
         doc.SetObject();
     }
     delete[] temp;
-
-
-    // 2. Modify it by DOM.
-   // Value& s = doc["result"][1]["text"];
-  //  league = (wchar_t)s.GetString();
-    // 3. Stringify the DOM
-
-    // Output json
-
     delete[] url;
     for (c = 0; c < j; c++)
     {
@@ -462,6 +437,7 @@ void processQueryKeys(wchar_t **&keys, char*& ResJson, Pool& pool, string type)
     Writer<StringBuffer> writer(buffer);
     d.Accept(writer);
     cout << buffer.GetString() << "\n";
+
     Value& keysArr = d["result"];
     Value& id = d["id"];
     assert(keysArr.IsArray());
@@ -513,13 +489,6 @@ void processQueryKeys(wchar_t **&keys, char*& ResJson, Pool& pool, string type)
         wcscat(keys[j], temp);
         delete[] temp;
     }
-    // 3. Stringify the DOM
-    //StringBuffer buffer;
-    //Writer<StringBuffer> writer(buffer);
-    //d.Accept(writer);
-    //wcout << keys << "\n"; 
-    // Output json
-    //cout << buffer.GetString() << "\n";
     processTradeResults(keys, id.GetString(), j, pool, type);
 }
 
@@ -527,42 +496,34 @@ void Query::setMinArmor(int min)
 {
     minArmor = min;
 }
-
 void Query::setMinHP(int min)
 {
     minHP = min;
 }
-
 void Query::setMinElecRes(int min)
 {
     minElecRes = min;
 }
-
 void Query::setMinFireRes(int min)
 {
     minFireRes = min;
 }
-
-void Query::setMinColdRes(int min)
+void Query::setMinColdRes(int min) 
 {
     minColdRes = min;
 }
-
-void Query::setMinChaosRes(int min)
+void Query::setMinChaosRes(int min) 
 {
     minChaosRes = min;
 }
-
 void Query::setMinEleRes(int min)
 {
     minEleRes = min;
 }
-
-void Query::setMinTotalRes(int min)
+void Query::setMinTotalRes(int min) 
 {
     minTotalRes = min;
 }
-
 void Query::setMaxPrice(float max)
 {
     maxPrice = max;
@@ -572,42 +533,34 @@ int Query::getMinArmor()
 {
     return minArmor;
 }
-
 int Query::getMinHP()
 {
     return minHP;
 }
-
 int Query::getMinElecRes()
 {
     return minElecRes;
 }
-
 int Query::getMinFireRes()
 {
     return minFireRes;
 }
-
 int Query::getMinColdRes()
 {
     return minColdRes;
 }
-
 int Query::getMinChaosRes()
 {
     return minChaosRes;
 }
-
-int Query::getMinEleRes()
+int Query::getMinEleRes() 
 { 
     return minEleRes;
 }
-
 int Query::getMinTotalRes()
 {
     return minTotalRes;
 }
-
 float Query::getMaxPrice()
 {
     return maxPrice;

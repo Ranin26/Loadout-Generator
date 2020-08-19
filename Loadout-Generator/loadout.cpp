@@ -984,7 +984,6 @@ void Pool::bestLoadouts(Loadout *&loadouts)
 	const int MAXe = MAX;
 	long long duration = 0;
 	start = CLOCK::now();
-	//getRepeatHash();
 	for (b = 0; b < MAXe && helmetPool[b]->getId() != ""; b++)
 	{
 		tempLoadout.addHelmet(helmetPool[b]);
@@ -1015,7 +1014,7 @@ void Pool::bestLoadouts(Loadout *&loadouts)
 										tempLoadout.calcStats();
 										if (tempLoadout.meetsMinimums())
 										{
-											tempLoadout.calcRating(); //230
+											tempLoadout.calcRating(); 
 											rating = tempLoadout.getRating();
 											if (rating > minRating && rating > loadouts[MAX_LOADOUTS - 1].getRating())
 											{
@@ -1028,7 +1027,6 @@ void Pool::bestLoadouts(Loadout *&loadouts)
 												loadouts[t] = tempLoadout;/**/
 												if (count < MAX_LOADOUTS - 1)	count++;
 											}
-											//none 33
 										}
 									}
 								}
@@ -1042,7 +1040,7 @@ void Pool::bestLoadouts(Loadout *&loadouts)
 		}
 	}
 	end = CLOCK::now();
-	cout << DURATION(end - start).count() << endl;
+	cout << DURATION(end - start).count()/1000.0 << " seconds." << endl;
 }
 
 void printLoadouts(Loadout loadouts[], ofstream& fout)
